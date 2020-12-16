@@ -22,25 +22,25 @@ Route::get('/customer/booking', [BookingController::class, 'customerBooking']);
 Route::post('/customer/booking', [BookingController::class, 'show']);
 
 Route::get('gotomenu', function () {
-    return view('vehMenu');
+    return view('vehicle/vehMenu');
 });
 
 Route::get('gotoadd', function () {
-    return view('vehAdd');
+    return view('vehicle/vehAdd');
 });
 
 Route::get('gotoedit', function () {
-    return view('vehEdit');
+    return view('vehicle/vehEdit');
 });
 
 Route::get('gotomainten', function () {
-    return view('vehMaintenance');
+    return view('vehicle/vehMaintenance');
 });
 
 Route::get('gotoeditform', function () {
-    return view('editForm');
+    return view('vehicle/editForm');
 });
 
 Route::get('gotoupdtmaintenanceform', function () {
-    return view('updtMainten');
+    return view('vehicle/updtMainten');
 });
