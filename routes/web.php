@@ -20,3 +20,27 @@ Route::get('/', function () {
 
 Route::get('/customer/booking', [BookingController::class, 'customerBooking']);
 Route::post('/customer/booking', [BookingController::class, 'show']);
+
+Route::get('gotomenu', function () {
+    return view('vehMenu');
+});
+
+Route::get('gotoadd', function () {
+    return view('vehAdd');
+});
+
+Route::get('gotoedit', function () {
+    return view('vehEdit');
+});
+
+Route::get('gotomainten', function () {
+    return view('vehMaintenance');
+});
+
+Route::get('gotoeditform', function () {
+    return view('editForm');
+});
+
+Route::get('gotoupdtmaintenanceform', function () {
+    return view('updtMainten');
+});
