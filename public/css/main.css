@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.2;
+    background: #0366ad;
+}
+
+/* Nav */
+.nav-homepage {
+    color: white;
+}
+
+.nav-title a {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item button#main-login {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 118px;
+    height: 30px;
+    background: rgba(255, 201, 60, 0.8);
+    border-radius: 7px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+/* Section: main-showcase */
+#main-showcase {
+    display: flex;
+    margin-top: 11rem;
+}
+
+#main-showcase img {
+    height: 332px;
+    flex-basis: 674px;
+    margin-top: 1rem;
+}
+#showcase-right {
+    margin-left: 52px;
+}
+#showcase-right h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #fffbfb;
+    margin: 0;
+    margin-top: -4rem;
+}
+
+#showcase-right button {
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 268px;
+    height: 55px;
+    background: #ffc93c;
+    border-radius: 13px;
+    font-size: 18px;
+}
