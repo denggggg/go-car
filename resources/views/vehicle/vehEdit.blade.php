@@ -3,12 +3,12 @@
    <head>
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
       <link href="{{ asset('/css/vehicle.css') }}" rel="stylesheet" />
-      <title>Document</title>
+      <title>vehEdit</title>
    </head>
    <body>
       <div class="v17_213">
          <div class="v17_214"></div>
-         <a href="http://127.0.0.1:8000/gotomenu">
+         <a href="http://127.0.0.1:8000/vehiclemenu">
          <span class="v17_215">GoCar | Driver</span>
          </a>
          <div class="v17_216">
@@ -17,7 +17,7 @@
          </div>
          <div class="v17_219">
             <div class="v17_220"></div>
-            <a href="http://127.0.0.1:8000/gotoeditform">
+            <a href="http://127.0.0.1:8000/editform">
             <span class="v17_221"> Edit Information</span>
          </div>
          </a>

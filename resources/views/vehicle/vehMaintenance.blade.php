@@ -15,7 +15,7 @@
          </div>
          <div class="v17_262">
             <div class="v17_263"></div>
-            <a href="http://127.0.0.1:8000/gotoupdtmaintenanceform">
+            <a href="http://127.0.0.1:8000/updtMaintenance">
             <span class="v17_264">Update maintenance record</span>
             </a>
          </div>

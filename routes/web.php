@@ -20,3 +20,17 @@ Route::get('/', function () {
 
 Route::get('/customer/booking', [BookingController::class, 'customerBooking']);
 Route::post('/customer/booking', [BookingController::class, 'show']);
+
+
+
+Route::get('vehiclemenu', 'App\Http\Controllers\vehicleController@menuveh' );
+
+Route::get('vehicleadd', 'App\Http\Controllers\vehicleController@addveh' );
+
+Route::get('vehicleedit', 'App\Http\Controllers\vehicleController@editveh' );
+
+Route::get('vehicleMaintenance', 'App\Http\Controllers\vehicleController@mainteveh' );
+
+Route::get('editform', 'App\Http\Controllers\vehicleController@editFormFunc' );
+
+Route::get('updtMaintenance', 'App\Http\Controllers\vehicleController@updateMaintenance' );

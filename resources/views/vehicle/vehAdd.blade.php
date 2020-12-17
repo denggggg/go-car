@@ -3,12 +3,12 @@
    <head>
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
       <link href="{{ asset('/css/vehicle.css') }}" rel="stylesheet" />
-      <title>Document</title>
+      <title>vehAdd</title>
    </head>
    <body>
       <div class="v17_64">
          <div class="v17_65"></div>
-         <a href="http://127.0.0.1:8000/gotomenu">
+         <a href="http://127.0.0.1:8000/vehiclemenu">
          <span class="v17_66">GoCar | Driver</span>
          </a>
          <div class="v17_67">
@@ -29,9 +29,9 @@
             <div class="v17_82"></div>
             <span class="v17_83">ADD VEHICLE</span>
          </div>
-         <span class="v17_84">Vehicle model :</span><span class="v17_85">Registration Number:</span><span class="v17_86">Colour:</span><span class="v17_87">Engine CC:</span><span class="v17_88">Brand..</span><span class="v17_89">Colour..</span><span class="v17_90">0.0</span>
-         <div class="v17_91"></div>
-         <span class="v17_92">Engine CC:</span><span class="v17_93">0.0</span>
+         <span class="v17_84">Vehiclemodel :</span><span class="v17_85">Registration Number:</span><span class="v17_86">Colour:</span><span class="v17_87">Engine CC:</span><span class="v17_88">Brand..</span><span class="v17_89">Colour..</span><span class="v17_90">0.0</span>
+         <input class="v17_91" type="text" placeholder="  0.0"></div>
+         <span class="v17_92">Engine CC:</span><span class="v17_93"></span>
          <div class="v17_117"></div>
          <span class="v17_118">Manufacturing year:</span><span class="v17_119">0.0</span>
          <div class="v17_120"></div>
