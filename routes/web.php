@@ -21,26 +21,16 @@ Route::get('/', function () {
 Route::get('/customer/booking', [BookingController::class, 'customerBooking']);
 Route::post('/customer/booking', [BookingController::class, 'show']);
 
-Route::get('gotomenu', function () {
-    return view('vehicle/vehMenu');
-});
 
-Route::get('gotoadd', function () {
-    return view('vehicle/vehAdd');
-});
 
-Route::get('gotoedit', function () {
-    return view('vehicle/vehEdit');
-});
+Route::get('vehiclemenu', 'App\Http\Controllers\vehicleController@menuveh' );
 
-Route::get('gotomainten', function () {
-    return view('vehicle/vehMaintenance');
-});
+Route::get('vehicleadd', 'App\Http\Controllers\vehicleController@addveh' );
 
-Route::get('gotoeditform', function () {
-    return view('vehicle/editForm');
-});
+Route::get('vehicleedit', 'App\Http\Controllers\vehicleController@editveh' );
 
-Route::get('gotoupdtmaintenanceform', function () {
-    return view('vehicle/updtMainten');
-});
+Route::get('vehicleMaintenance', 'App\Http\Controllers\vehicleController@mainteveh' );
+
+Route::get('editform', 'App\Http\Controllers\vehicleController@editFormFunc' );
+
+Route::get('updtMaintenance', 'App\Http\Controllers\vehicleController@updateMaintenance' );
