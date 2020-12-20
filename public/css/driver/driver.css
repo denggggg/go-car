@@ -1,0 +1,263 @@
+body {
+    background: white;
+}
+
+p {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+a {
+    text-decoration: none;
+}
+.inputs {
+    border-radius: 6px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 6px;
+}
+
+.nav-cust {
+    background-color: #243762;
+    color: white;
+}
+
+.nav-item button.cust-logout {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 118px;
+    height: 30px;
+    background: black;
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+#cust-booking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cust-booking h2 {
+    margin: 0;
+}
+
+#cust-booking-form {
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cust-booking-form .booking-input {
+    display: flex;
+}
+
+#cust-booking-form .booking-input .location {
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+#cust-booking-form .booking-input .zipcode {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+#cust-booking-form .booking-input .location input {
+    width: 100%;
+}
+
+.booking-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 55px;
+    background: #ef1f4d;
+    border-radius: 6px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cust-booking-form a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/* Driver List */
+#cust-driver-list {
+    display: flex;
+    flex-direction: column;
+}
+
+#cust-driver-list h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.driver-list {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.driver {
+    display: flex;
+}
+.driver-list img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.driver-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.driver-info p:nth-child(1) {
+    font-size: 1.2rem;
+}
+.driver-info p:nth-child(2) {
+    font-weight: unset;
+}
+
+.driver-info-btns {
+    display: flex;
+}
+
+.driver-info-btns a {
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.driver-info-btns a:nth-child(1) {
+    background-color: #056de7;
+}
+
+.driver-info-btns a:nth-child(2) {
+    background-color: black;
+}
+
+.driver-list a.driver-book-btn {
+    background-color: #ef1f4d;
+    align-self: center;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    width: 118px;
+    height: 30px;
+    border-radius: 7px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#driver-homepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#driver-homepage h2{
+    margin-top: 6rem;
+}
+
+#driver-dashboard{
+    margin-top: 4rem;
+    display: flex;
+}
+
+.dashboard{
+    margin-bottom: 6rem; 
+}
+
+.dashboard input{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    width: 250px;
+    font-size: 1.4rem;
+}
+
+.dashboard .row {
+    margin-right: 3rem;
+}
+
+.dashboard .button p{
+    font-size: 1.4rem;
+}
+
+#driver-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#driver-account h2{
+    margin-top: 6rem;
+}
+#driver-profile{
+    margin-top: 4rem;
+    display: flex;
+}
+
+.profile{
+    margin-bottom: 6rem; 
+}
+
+.profile input{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    width: 250px;
+    font-size: 1.4rem;
+}
+
+.profile .row {
+    margin: 1rem;
+}
+
+.profile .button p{
+    font-size: 1.4rem;
+}
+
+
