@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\bookingController;
+use App\Http\Controllers\driverController;
 
 /*
 |--------------------------------------------------------------------------

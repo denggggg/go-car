@@ -20,7 +20,7 @@ class driverController extends Controller
     }
     public function updateDriver()
     {
-        return view('driver/driverHomepage');
+        return view('driver/driverProfile');
     }
     public function viewBookingLog()
     {
