@@ -1,0 +1,64 @@
+body {
+    background: white;
+}
+
+p {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+.inputs {
+    border-radius: 6px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 6px;
+}
+
+.nav-cust {
+    background-color: #243762;
+    color: white;
+}
+
+.nav-item button.cust-logout {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 118px;
+    height: 30px;
+    background: #243762;
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+#driver-booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-accept {
+    background-color: #3083d0;
+    color: white;
+}
+
+.btn-reject {
+    background-color: #ef1f4d;
+    color: white;
+}

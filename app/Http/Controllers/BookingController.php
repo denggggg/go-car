@@ -36,4 +36,14 @@ class bookingController extends Controller
         return view('booking/custViewBookStatus');
     }
 
+    public function getDriverPendingBookingsByID() 
+    {
+        return view('booking/driverViewBook');
+    }
+
+    public function getDriverAssignedBookingsByID() 
+    {
+        return view('booking/driverUpdateBook');
+    }
+
 }
