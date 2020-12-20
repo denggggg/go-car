@@ -28,15 +28,15 @@
 					<div id="upload" >
 						Upload
 					</div>
-					<img src="img/skins/ellipse_3.png" id="ellipse_3" />
+					<img src="img/custimg/ellipse_3.png" id="ellipse_3" />
 
 				</div>
 				<div id="rectangle_21"  ></div>
 				<div id="ali_bin_abu_ek1" >
 					Ali bin Abu
 				</div>
-				<img src="img/skins/rectangle_25.png" id="rectangle_25" />
-				<img src="img/skins/rectangle_26.png" id="rectangle_26" />
+				<img src="img/custimg/rectangle_25.png" id="rectangle_25" />
+				<img src="img/custimg/rectangle_26.png" id="rectangle_26" />
 
 				<div id="group_9"  >
 					<div id="rectangle_11_ek1"  ></div>

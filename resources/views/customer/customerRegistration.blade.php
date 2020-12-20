@@ -26,17 +26,17 @@
 						Customer Registration
 					</div>
 					<div id="rectangle_3"  ></div>
-					<img src="img/skins/rectangle_12.png"​ id="rectangle_12"/>
-					<img src="img/skins/rectangle_14.png" id="rectangle_14" />
-					<img src="img/skins/rectangle_15.png " id="rectangle_15" />
-					<img src="img/skins/rectangle_16.png " id="rectangle_16" />
-					<img src="img/skins/rectangle_17.png" id="rectangle_17" />
-					<img src="img/skins/rectangle_20.png" id="rectangle_20" />
-					<img src="img/skins/rectangle_19.png" id="rectangle_19" />
+					<img src="img/custimg/rectangle_12.png"​ id="rectangle_12"/>
+					<img src="img/custimg/rectangle_14.png" id="rectangle_14" />
+					<img src="img/custimg/rectangle_15.png " id="rectangle_15" />
+					<img src="img/custimg/rectangle_16.png " id="rectangle_16" />
+					<img src="img/custimg/rectangle_17.png" id="rectangle_17" />
+					<img src="img/custimg/rectangle_20.png" id="rectangle_20" />
+					<img src="img/custimg/rectangle_19.png" id="rectangle_19" />
 					
 
 
-					<!-- {​​​​{​​​​ asset('img/skins/clock_3.png') }​​​​}​​​​ -->
+					<!-- {​​​​{​​​​ asset('img/custimg/clock_3.png') }​​​​}​​​​ -->
 					<div id="group_8"  >
 
 						<div id="group_11"  >

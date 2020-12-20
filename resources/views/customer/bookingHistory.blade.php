@@ -28,7 +28,7 @@
 				<div id="muhammad_firdaus_bin_aminullah" >
 					 Muhammad Firdaus bin Aminullah
 				</div>
-				<img src="img/skins/user_1.png" id="user_1" />
+				<img src="img/custimg/user_1.png" id="user_1" />
 				<div id="ump_pekan_pahang" >
 					UMP Pekan Pahang
 				</div>
@@ -41,14 +41,14 @@
 				<div id="ford_mustang_gt_5_0" >
 					Ford Mustang GT 5.0
 				</div>
-				<img src="img/skins/line_1.png" id="line_1" />
-				<img src="img/skins/line_2.png" id="line_2" />
-				<img src="img/skins/asset_3_1.png" id="asset_3_1" />
+				<img src="img/custimg/line_1.png" id="line_1" />
+				<img src="img/custimg/line_2.png" id="line_2" />
+				<img src="img/custimg/asset_3_1.png" id="asset_3_1" />
 				<div id="gocar___customer" >
 					GoCar | Customer
 				</div>
-				<img src="img/skins/drop_point_1.png" id="drop_point_1" />
-				<img src="img/skins/pickup_point_1.png" id="pickup_point_1" />
+				<img src="img/custimg/drop_point_1.png" id="drop_point_1" />
+				<img src="img/custimg/pickup_point_1.png" id="pickup_point_1" />
 				<div id="driver_details" >
 					Driver Details
 				</div>
@@ -78,12 +78,12 @@
 			<div id="_08_59am" >
 				08:59AM
 			</div>
-			<img src="img/skins/calendar_1.png" id="calendar_1" />
-			<img src="img/skins/clock_1.png" id="clock_1" />
+			<img src="img/custimg/calendar_1.png" id="calendar_1" />
+			<img src="img/custimg/clock_1.png" id="clock_1" />
 			<div id="alif_iskandar_bin_azura" >
 				 Alif Iskandar bin Azura
 			</div>
-			<img src="img/skins/user_1_ek1.png" id="user_1_ek1" />
+			<img src="img/custimg/user_1_ek1.png" id="user_1_ek1" />
 			<div id="ump_gambang_pahang" >
 				UMP Gambang Pahang
 			</div>
@@ -96,9 +96,9 @@
 			<div id="porche_cayenne" >
 				Porche Cayenne
 			</div>
-			<img src="img/skins/asset_3_1_ek1.png" id="asset_3_1_ek1" />
-			<img src="img/skins/drop_point_1_ek1.png" id="drop_point_1_ek1" />
-			<img src="img/skins/pickup_point_1_ek1.png" id="pickup_point_1_ek1" />
+			<img src="img/custimg/asset_3_1_ek1.png" id="asset_3_1_ek1" />
+			<img src="img/custimg/drop_point_1_ek1.png" id="drop_point_1_ek1" />
+			<img src="img/custimg/pickup_point_1_ek1.png" id="pickup_point_1_ek1" />
 			<div id="driver_details_ek1" >
 				Driver Details
 			</div>
@@ -117,8 +117,8 @@
 			<div id="_10_59am" >
 				10:59AM
 			</div>
-			<img src="img/skins/calendar_2.png" id="calendar_2" />
-			<img src="img/skins/clock_2.png" id="clock_2" />
+			<img src="img/custimg/calendar_2.png" id="calendar_2" />
+			<img src="img/custimg/clock_2.png" id="clock_2" />
 
 		</div>
 	</body>
