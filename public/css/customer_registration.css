@@ -1,0 +1,1847 @@
+/*
+	@name customer_registration
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: table; position: relative; width: 1440px;  overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+#content-container > div{ position: relative; top:inherit; }
+#page_customer_registration_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 676px;
+}
+
+#_bg__customer_registration_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 676px;
+	background:rgba(255,255,255,0.6);
+}
+
+
+#rectangle_1 {
+	opacity:0.91000002622604;
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 72px;
+	background:rgba(0,0,0,0.91);
+}
+
+
+#gocar {
+	top: 22px;
+	left: 140px;
+	width: 67px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 24px;
+	text-align: left;
+	line-height: 24px;
+	color:#FFFFFF;
+}
+
+
+#customer_registration_ek3 {
+	top: 83px;
+	left: 540px;
+	width: 359px;
+	height: 95px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 36px;
+	text-align: left;
+	line-height: 36px;
+	color:#000000;
+}
+
+
+#rectangle_29 {
+	top: 122px;
+	left: 406px;
+	width: 612px;
+	height: 526px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #000000;
+	background:rgba(196,196,196,1);
+}
+
+
+#rectangle_30 {
+	top: 140px;
+	left: 594px;
+	width: 328px;
+	height: 47px;
+}
+
+
+#ali_bin_abu {
+	top: 155px;
+	left: 611px;
+	width: 88px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#rectangle_31 {
+	top: 476px;
+	left: 596px;
+	width: 127px;
+	height: 68px;
+}
+
+
+#rectangle_32 {
+	top: 384px;
+	left: 596px;
+	width: 328px;
+	height: 85px;
+}
+
+
+#rectangle_33 {
+	top: 206px;
+	left: 596px;
+	width: 328px;
+	height: 165px;
+}
+
+#group_13 {
+	top: 566px;
+	left: 439px;
+	width: 531px;
+	height: 57px;
+}
+
+#rectangle_11 {
+	opacity:0.91000002622604;
+	top: 0px;
+	left: 0px;
+	width: 531px;
+	height: 57px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background:rgba(239,31,77,0.91);
+}
+
+
+#register {
+	top: 18px;
+	left: 221px;
+	width: 83px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#phone_number_ {
+	top: 335px;
+	left: 434px;
+	width: 99px;
+	height: 28px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#password_ {
+	top: 275px;
+	left: 463px;
+	width: 66px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#address_line_ {
+	top: 397px;
+	left: 449px;
+	width: 85px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#picture_ {
+	top: 501px;
+	left: 484px;
+	width: 48px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#full_name__ {
+	top: 159px;
+	left: 459px;
+	width: 70px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#email_ {
+	top: 219px;
+	left: 490px;
+	width: 39px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#rectangle_34 {
+	top: 506px;
+	left: 729px;
+	width: 103px;
+	height: 17px;
+}
+
+
+#ali_gmail_com {
+	top: 219px;
+	left: 607px;
+	width: 248px;
+	height: 38px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#sukagrabcar123 {
+	top: 274px;
+	left: 607px;
+	width: 302px;
+	height: 46px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#_01122334455 {
+	top: 336px;
+	left: 611px;
+	width: 302px;
+	height: 46px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#no_15__jalan_ampang_jaya__43300__kuala_lumpur {
+	top: 390px;
+	left: 607px;
+	width: 302px;
+	height: 46px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+#page_customer_bookinghistory_interface_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 676px;
+}
+
+#_bg__customer_bookinghistory_interface_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 676px;
+	background:rgba(255,255,255,0.6);
+}
+
+
+#rectangle_1_ek1 {
+	opacity:0.91000002622604;
+	top: 0px;
+	left: 0px;
+	width: 1449px;
+	height: 72px;
+	background:rgba(0,0,0,0.91);
+}
+
+
+#gocar_ek1 {
+	top: -144px;
+	left: 124px;
+	width: 67px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 24px;
+	text-align: left;
+	line-height: 24px;
+	color:#FFFFFF;
+}
+
+
+#booking_history {
+	top: 110px;
+	left: 606px;
+	width: 255px;
+	height: 67px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 36px;
+	text-align: left;
+	line-height: 36px;
+	color:#000000;
+}
+
+
+#muhammad_firdaus_bin_aminullah {
+	top: 248px;
+	left: 379px;
+	width: 404px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#user_1 {
+	top: 240px;
+	left: 346px;
+	width: 25px;
+	height: 32px;
+}
+
+
+#ump_pekan_pahang {
+	top: 246px;
+	left: 844px;
+	width: 404px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#kcm_mall {
+	top: 247px;
+	left: 1058px;
+	width: 404px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#__ {
+	top: 248px;
+	left: 1007px;
+	width: 15px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#ford_mustang_gt_5_0 {
+	top: 274px;
+	left: 387px;
+	width: 238px;
+	height: 28px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#line_1 {
+	top: 311px;
+	left: 147px;
+	width: 1160.01px;
+	height: 0px;
+}
+
+
+#line_2 {
+	top: 450px;
+	left: 147px;
+	width: 1160px;
+	height: 0px;
+}
+
+
+#asset_3_1 {
+	top: 277px;
+	left: 343px;
+	width: 37px;
+	height: 15px;
+}
+
+
+#gocar___customer {
+	top: 22px;
+	left: 144px;
+	width: 190px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 24px;
+	text-align: left;
+	line-height: 24px;
+	color:#FFFFFF;
+}
+
+
+#drop_point_1 {
+	top: 249px;
+	left: 1038px;
+	width: 18px;
+	height: 17px;
+}
+
+
+#pickup_point_1 {
+	top: 246px;
+	left: 827px;
+	width: 15px;
+	height: 18px;
+}
+
+
+#driver_details {
+	top: 206px;
+	left: 452px;
+	width: 404px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#trip_details {
+	top: 209px;
+	left: 914px;
+	width: 404px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#from {
+	top: 244px;
+	left: 783px;
+	width: 73px;
+	height: 35px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#to {
+	top: 247px;
+	left: 1017px;
+	width: 73px;
+	height: 35px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+#group_17 {
+	top: 26px;
+	left: 1201px;
+	width: 118px;
+	height: 30px;
+}
+
+#rectangle_2 {
+	top: 0px;
+	left: 0px;
+	width: 120px;
+	height: 32px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid #ffffff;
+	background:rgba(0,0,0,1);
+}
+
+
+#log_out {
+	top: 8px;
+	left: 41px;
+	width: 47.47px;
+	height: 27.5px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 13px;
+	text-align: left;
+	line-height: 13px;
+	color:#FFFFFF;
+}
+
+#page_customer_profile_interface__ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 676px;
+}
+
+#_bg__customer_profile_interface__ek2 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 676px;
+	background:rgba(255,255,255,0.6);
+}
+
+
+#rectangle_1_ek2 {
+	opacity:0.91000002622604;
+	top: 0px;
+	left: 0px;
+	width: 1449px;
+	height: 72px;
+	background:rgba(0,0,0,0.91);
+}
+
+
+#gocar___customer_ek1 {
+	top: 22px;
+	left: 140px;
+	width: 190px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 24px;
+	text-align: left;
+	line-height: 24px;
+	color:#FFFFFF;
+}
+
+#group_12 {
+	top: 250px;
+	left: 220px;
+	width: 169px;
+	height: 152px;
+}
+
+#rectangle_17 {
+	top: 0px;
+	left: 0px;
+	width: 171px;
+	height: 116px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #000000;
+	background:rgba(255,255,255,1);
+}
+
+
+#rectangle_18 {
+	top: 112px;
+	left: 0px;
+	width: 171px;
+	height: 42px;
+	border: 1px solid #000000;
+	background:rgba(255,255,255,1);
+}
+
+
+#upload {
+	top: 124px;
+	left: 63px;
+	width: 44px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#ellipse_3 {
+	top: 11px;
+	left: 39px;
+	width: 92px;
+	height: 92px;
+}
+
+
+#rectangle_21 {
+	top: 140px;
+	left: 424px;
+	width: 612px;
+	height: 368px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #000000;
+	background:rgba(196,196,196,1);
+}
+
+
+#ali_bin_abu_ek1 {
+	top: 173px;
+	left: 629px;
+	width: 88px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#rectangle_25 {
+	top: 402px;
+	left: 614px;
+	width: 328px;
+	height: 85px;
+}
+
+
+#rectangle_26 {
+	top: 224px;
+	left: 614px;
+	width: 328px;
+	height: 165px;
+}
+
+#group_9 {
+	top: 536px;
+	left: 744px;
+	width: 220px;
+	height: 57px;
+}
+
+#rectangle_11_ek1 {
+	opacity:0.91000002622604;
+	top: 0px;
+	left: 0px;
+	width: 220px;
+	height: 57px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background:rgba(239,31,77,0.91);
+}
+
+
+#update_profile {
+	top: 18px;
+	left: 50px;
+	width: 133px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+#group_13_ek1 {
+	top: 536px;
+	left: 491px;
+	width: 220px;
+	height: 57px;
+}
+
+#rectangle_11_ek2 {
+	opacity:0.91000002622604;
+	top: 0px;
+	left: 0px;
+	width: 220px;
+	height: 57px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background:rgba(239,31,77,0.91);
+}
+
+
+#cancel {
+	top: 18px;
+	left: 79px;
+	width: 133px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#phone_number__ek1 {
+	top: 353px;
+	left: 452px;
+	width: 99px;
+	height: 28px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#password__ek1 {
+	top: 293px;
+	left: 481px;
+	width: 66px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#address_line__ek1 {
+	top: 415px;
+	left: 467px;
+	width: 85px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#full_name___ek1 {
+	top: 177px;
+	left: 477px;
+	width: 70px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#email__ek1 {
+	top: 237px;
+	left: 508px;
+	width: 39px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#ali_gmail_com_ek1 {
+	top: 237px;
+	left: 625px;
+	width: 248px;
+	height: 38px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#sukagrabcar123_ek1 {
+	top: 292px;
+	left: 625px;
+	width: 302px;
+	height: 46px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#_01122334455_ek1 {
+	top: 354px;
+	left: 629px;
+	width: 302px;
+	height: 46px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#no_15__jalan_ampang_jaya__43300__kuala_lumpur_ek1 {
+	top: 408px;
+	left: 625px;
+	width: 302px;
+	height: 46px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#my_profile {
+	top: 92px;
+	left: 643px;
+	width: 359px;
+	height: 95px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 36px;
+	text-align: left;
+	line-height: 36px;
+	color:#000000;
+}
+
+#group_17_ek1 {
+	top: 22px;
+	left: 1197px;
+	width: 118px;
+	height: 30px;
+}
+
+#rectangle_2_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 120px;
+	height: 32px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid #ffffff;
+	background:rgba(0,0,0,1);
+}
+
+
+#log_out_ek1 {
+	top: 8px;
+	left: 41px;
+	width: 47.47px;
+	height: 27.5px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 13px;
+	text-align: left;
+	line-height: 13px;
+	color:#FFFFFF;
+}
+
+#page_customer_profile_update_error__ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 676px;
+}
+
+#_bg__customer_profile_update_error__ek2 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 676px;
+	background:rgba(255,255,255,0.6);
+}
+
+
+#rectangle_1_ek3 {
+	opacity:0.91000002622604;
+	top: 0px;
+	left: 0px;
+	width: 1449px;
+	height: 72px;
+	background:rgba(0,0,0,0.91);
+}
+
+
+#gocar___customer_ek2 {
+	top: 22px;
+	left: 140px;
+	width: 190px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 24px;
+	text-align: left;
+	line-height: 24px;
+	color:#FFFFFF;
+}
+
+#group_12_ek1 {
+	top: 250px;
+	left: 220px;
+	width: 169px;
+	height: 152px;
+}
+
+#rectangle_17_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 171px;
+	height: 116px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #000000;
+	background:rgba(255,255,255,1);
+}
+
+
+#rectangle_18_ek1 {
+	top: 112px;
+	left: 0px;
+	width: 171px;
+	height: 42px;
+	border: 1px solid #000000;
+	background:rgba(255,255,255,1);
+}
+
+
+#upload_ek1 {
+	top: 124px;
+	left: 63px;
+	width: 44px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#ellipse_3_ek1 {
+	top: 11px;
+	left: 39px;
+	width: 92px;
+	height: 92px;
+}
+
+
+#rectangle_21_ek1 {
+	top: 140px;
+	left: 424px;
+	width: 837px;
+	height: 368px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #000000;
+	background:rgba(196,196,196,1);
+}
+
+
+#ali_bin_abu_ek2 {
+	top: 173px;
+	left: 629px;
+	width: 88px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#rectangle_25_ek1 {
+	top: 402px;
+	left: 614px;
+	width: 328px;
+	height: 85px;
+}
+
+
+#rectangle_26_ek1 {
+	top: 224px;
+	left: 614px;
+	width: 328px;
+	height: 165px;
+}
+
+#group_9_ek1 {
+	top: 536px;
+	left: 744px;
+	width: 220px;
+	height: 57px;
+}
+
+#rectangle_11_ek3 {
+	opacity:0.91000002622604;
+	top: 0px;
+	left: 0px;
+	width: 220px;
+	height: 57px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background:rgba(239,31,77,0.91);
+}
+
+
+#update_profile_ek1 {
+	top: 18px;
+	left: 50px;
+	width: 133px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+#group_13_ek2 {
+	top: 536px;
+	left: 491px;
+	width: 220px;
+	height: 57px;
+}
+
+#rectangle_11_ek4 {
+	opacity:0.91000002622604;
+	top: 0px;
+	left: 0px;
+	width: 220px;
+	height: 57px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background:rgba(239,31,77,0.91);
+}
+
+
+#cancel_ek1 {
+	top: 18px;
+	left: 79px;
+	width: 133px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#phone_number__ek2 {
+	top: 353px;
+	left: 452px;
+	width: 99px;
+	height: 28px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#password__ek2 {
+	top: 293px;
+	left: 481px;
+	width: 66px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#address_line__ek2 {
+	top: 415px;
+	left: 467px;
+	width: 85px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#full_name___ek2 {
+	top: 177px;
+	left: 477px;
+	width: 70px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#email__ek2 {
+	top: 237px;
+	left: 508px;
+	width: 39px;
+	height: 26px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#ali_gmail_com_ek2 {
+	top: 237px;
+	left: 625px;
+	width: 248px;
+	height: 38px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#_01122334455_ek2 {
+	top: 354px;
+	left: 629px;
+	width: 302px;
+	height: 46px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#no_15__jalan_ampang_jaya__43300__kuala_lumpur_ek2 {
+	top: 408px;
+	left: 625px;
+	width: 302px;
+	height: 46px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#my_profile_ek1 {
+	top: 92px;
+	left: 643px;
+	width: 359px;
+	height: 95px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 36px;
+	text-align: left;
+	line-height: 36px;
+	color:#000000;
+}
+
+#group_17_ek2 {
+	top: 22px;
+	left: 1197px;
+	width: 118px;
+	height: 30px;
+}
+
+#rectangle_2_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 120px;
+	height: 32px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid #ffffff;
+	background:rgba(0,0,0,1);
+}
+
+
+#log_out_ek2 {
+	top: 8px;
+	left: 41px;
+	width: 47.47px;
+	height: 27.5px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 13px;
+	text-align: left;
+	line-height: 13px;
+	color:#FFFFFF;
+}
+
+
+#error_update_1 {
+	top: 283px;
+	left: 889px;
+	width: 167px;
+	height: 24px;
+}
+
+
+#_11_08_2020 {
+	top: -1418px;
+	left: 3864px;
+	width: 110px;
+	height: 35px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#_08_59am {
+	top: -1419px;
+	left: 4010px;
+	width: 110px;
+	height: 35px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#calendar_1 {
+	top: -1425px;
+	left: 3829px;
+	width: 27px;
+	height: 28px;
+}
+
+
+#clock_1 {
+	top: -1424px;
+	left: 3977px;
+	width: 29px;
+	height: 28px;
+}
+
+
+#alif_iskandar_bin_azura {
+	top: -1311px;
+	left: 3387px;
+	width: 404px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#user_1_ek1 {
+	top: -1318px;
+	left: 3342px;
+	width: 25px;
+	height: 32px;
+}
+
+
+#ump_gambang_pahang {
+	top: -1313px;
+	left: 3852px;
+	width: 404px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#kcm_mall_ek1 {
+	top: -1312px;
+	left: 4093px;
+	width: 404px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#___ek1 {
+	top: -1311px;
+	left: 4042px;
+	width: 15px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#porche_cayenne {
+	top: -1282px;
+	left: 3392px;
+	width: 238px;
+	height: 28px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#asset_3_1_ek1 {
+	top: -1281px;
+	left: 3339px;
+	width: 37px;
+	height: 15px;
+}
+
+
+#drop_point_1_ek1 {
+	top: -1310px;
+	left: 4073px;
+	width: 18px;
+	height: 17px;
+}
+
+
+#pickup_point_1_ek1 {
+	top: -1313px;
+	left: 3835px;
+	width: 15px;
+	height: 18px;
+}
+
+
+#driver_details_ek1 {
+	top: -1352px;
+	left: 3448px;
+	width: 404px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#trip_details_ek1 {
+	top: -1345px;
+	left: 3922px;
+	width: 404px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#from_ek1 {
+	top: -1315px;
+	left: 3791px;
+	width: 73px;
+	height: 35px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#to_ek1 {
+	top: -1312px;
+	left: 4052px;
+	width: 73px;
+	height: 35px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#_13_10_2020 {
+	top: -1281px;
+	left: 3860px;
+	width: 110px;
+	height: 35px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#_10_59am {
+	top: -1280px;
+	left: 4010px;
+	width: 110px;
+	height: 35px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#calendar_2 {
+	top: -1288px;
+	left: 3829px;
+	width: 27px;
+	height: 28px;
+}
+
+
+#clock_2 {
+	top: -1284px;
+	left: 3977px;
+	width: 29px;
+	height: 28px;
+}
+
+#page_customer_dashboard_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 676px;
+}
+
+#_bg__customer_dashboard_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 676px;
+	background:rgba(255,255,255,0.6);
+}
+
+
+#rectangle_1_ek4 {
+	opacity:0.91000002622604;
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 72px;
+	background:rgba(0,0,0,0.91);
+}
+
+
+#gocar___customer_ek3 {
+	top: 22px;
+	left: 140px;
+	width: 190px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 24px;
+	text-align: left;
+	line-height: 24px;
+	color:#FFFFFF;
+}
+
+
+#welcome_ali_bin_abu_ {
+	top: 164px;
+	left: 555px;
+	width: 339px;
+	height: 67px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 36px;
+	text-align: left;
+	line-height: 36px;
+	color:#000000;
+}
+
+#group_8 {
+	top: 298px;
+	left: 200px;
+	width: 314px;
+	height: 142px;
+}
+#group_8_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 314px;
+	height: 142px;
+}
+
+#rectangle_3 {
+	top: 0px;
+	left: 0px;
+	width: 314px;
+	height: 142px;
+	-ms-border-radius: 11px;
+	-o-border-radius: 11px;
+	-moz-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+	background:rgba(196,196,196,1);
+}
+
+
+#view_profile {
+	top: 53px;
+	left: 46px;
+	width: 209px;
+	height: 114px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 36px;
+	text-align: center;
+	line-height: 36px;
+	color:#000000;
+}
+
+#group_9_ek2 {
+	top: 298px;
+	left: 909px;
+	width: 314px;
+	height: 142px;
+}
+#group_9_ek3 {
+	top: 0px;
+	left: 0px;
+	width: 314px;
+	height: 142px;
+}
+#group_15 {
+	top: 0px;
+	left: 0px;
+	width: 314px;
+	height: 142px;
+}
+
+#rectangle_3_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 314px;
+	height: 142px;
+	-ms-border-radius: 11px;
+	-o-border-radius: 11px;
+	-moz-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+	background:rgba(196,196,196,1);
+}
+
+
+#view_booking_history {
+	top: 27px;
+	left: 18px;
+	width: 276px;
+	height: 114px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 36px;
+	text-align: center;
+	line-height: 36px;
+	color:#000000;
+}
+
+#group_16 {
+	top: 298px;
+	left: 555px;
+	width: 314px;
+	height: 142px;
+}
+#group_9_ek4 {
+	top: 0px;
+	left: 0px;
+	width: 314px;
+	height: 142px;
+}
+#group_15_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 314px;
+	height: 142px;
+}
+
+#rectangle_3_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 314px;
+	height: 142px;
+	-ms-border-radius: 11px;
+	-o-border-radius: 11px;
+	-moz-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+	background:rgba(196,196,196,1);
+}
+
+
+#manage_booking {
+	top: 27px;
+	left: 18px;
+	width: 276px;
+	height: 114px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 36px;
+	text-align: center;
+	line-height: 36px;
+	color:#000000;
+}
+
+#group_1 {
+	top: 21px;
+	left: 1189px;
+	width: 118px;
+	height: 30px;
+}
+
+#rectangle_2_ek3 {
+	top: 0px;
+	left: 0px;
+	width: 120px;
+	height: 32px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid #ffffff;
+	background:rgba(0,0,0,1);
+}
+
+
+#log_out_ek3 {
+	top: 8px;
+	left: 41px;
+	width: 47.47px;
+	height: 27.5px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 13px;
+	text-align: left;
+	line-height: 13px;
+	color:#FFFFFF;
+}
+
+
+
+/* Add your custom CSS here */

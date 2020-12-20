@@ -1,0 +1,345 @@
+/*
+	@name customer_registration
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: table; position: relative; width: 1440px; width: 1440px; height: 676px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+#_bg__customer_registration {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 676px;
+	background:rgba(255,255,255,0.6);
+}
+
+
+#rectangle_1 {
+	opacity:0.91000002622604;
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 72px;
+	background:rgba(0,0,0,0.91);
+}
+
+
+#gocar {
+	top: 22px;
+	left: 140px;
+	width: 67px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 24px;
+	text-align: left;
+	line-height: 24px;
+	color:#FFFFFF;
+}
+
+#group_10 {
+	top: 92px;
+	left: 404px;
+	width: 556px;
+	height: 553px;
+}
+#group_9 {
+	top: 0px;
+	left: 0px;
+	width: 556px;
+	height: 553px;
+}
+
+#customer_registration {
+	top: 0px;
+	left: 108px;
+	width: 372px;
+	height: 77.48px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 36px;
+	text-align: center;
+	line-height: 36px;
+	color:#000000;
+}
+
+
+#rectangle_3 {
+	top: 44px;
+	left: 0px;
+	width: 558px;
+	height: 511.27px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #000000;
+	background:rgba(196,196,196,1);
+}
+
+
+#rectangle_12 {
+	top: 59px;
+	left: 158px;
+	width: 328px;
+	height: 31.1px;
+}
+
+
+#rectangle_14 {
+	top: 111px;
+	left: 158px;
+	width: 328px;
+	height: 31.1px;
+}
+
+
+#rectangle_15 {
+	top: 159px;
+	left: 158px;
+	width: 328px;
+	height: 31.1px;
+}
+
+
+#rectangle_16 {
+	top: 208px;
+	left: 158px;
+	width: 328px;
+	height: 31.1px;
+}
+
+
+#rectangle_17 {
+	top: 255px;
+	left: 158px;
+	width: 328px;
+	height: 48px;
+}
+
+
+#rectangle_20 {
+	top: 392px;
+	left: 249px;
+	width: 103px;
+	height: 16.52px;
+}
+
+
+#rectangle_19 {
+	top: 362px;
+	left: 158px;
+	width: 81px;
+	height: 76.78px;
+}
+
+#group_8 {
+	top: 467px;
+	left: 130px;
+	width: 328px;
+	height: 47.62px;
+}
+#group_11 {
+	top: 0px;
+	left: 0px;
+	width: 328px;
+	height: 47.62px;
+}
+
+#rectangle_11 {
+	top: 0px;
+	left: 0px;
+	width: 328px;
+	height: 47.62px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background:rgba(239,31,77,1);
+}
+
+
+#register {
+	top: 7px;
+	left: 95px;
+	width: 124px;
+	height: 30.55px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: center;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#full_name_ {
+	top: 66px;
+	left: 70px;
+	width: 67px;
+	height: 27.49px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#phone_number_ {
+	top: 213px;
+	left: 40px;
+	width: 97px;
+	height: 32.35px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#picture_ {
+	top: 386px;
+	left: 31px;
+	width: 97px;
+	height: 32.35px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: right;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#email_ {
+	top: 118px;
+	left: 98px;
+	width: 39px;
+	height: 25.55px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#address_line__ {
+	top: 259px;
+	left: 48px;
+	width: 88px;
+	height: 25.55px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: center;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#password_ {
+	top: 168px;
+	left: 71px;
+	width: 66px;
+	height: 25.55px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 14px;
+	text-align: left;
+	line-height: 14px;
+	color:#000000;
+}
+
+
+#ali_bin_abu {
+	top: 158px;
+	left: 572px;
+	width: 464px;
+	height: 33px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#ali_gmail_com {
+	top: 210px;
+	left: 572px;
+	width: 464px;
+	height: 33px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#sukagrabcar123 {
+	top: 256px;
+	left: 572px;
+	width: 205px;
+	height: 33px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#_0196448184 {
+	top: 305px;
+	left: 572px;
+	width: 110px;
+	height: 33px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+#universiti_malaysia_pahang__26600_pekan__pahang {
+	top: 352px;
+	left: 572px;
+	width: 294px;
+	height: 33px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 18px;
+	color:#000000;
+}
+
+
+
+/* Add your custom CSS here */
