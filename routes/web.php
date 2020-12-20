@@ -27,6 +27,7 @@ Route::get('/customer/driver/1', [BookingController::class, 'getDriverByID']);
 Route::get('/customer/vehicle/1', [BookingController::class, 'getVehicleByID']);
 
 Route::post('/customer/confirm', [BookingController::class, 'confirmBookingByID']);
+Route::post('/customer/status', [BookingController::class, 'getBookingByID']);
 
 
 Route::get('vehiclemenu', 'App\Http\Controllers\vehicleController@menuveh' );

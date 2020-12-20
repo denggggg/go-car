@@ -299,3 +299,92 @@ a {
     background: #ef1f4d;
     border-radius: 6px;
 }
+
+#booking-status {
+    max-width: 600px;
+}
+
+.status {
+    display: flex;
+    min-height: 100px;
+}
+
+.status > p {
+    font-size: 1.2rem;
+    color: #9ba4b4;
+    margin: 0;
+}
+
+.status-details p {
+    color: #9ba4b4;
+}
+
+.status-details p.active,
+h2.active {
+    color: black !important;
+}
+
+.status-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status-line .circle {
+    height: 40px;
+    width: 30px;
+    background-color: #9ba4b4;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.status-line .line {
+    height: 100%;
+    width: 3px;
+    background-color: #9ba4b4;
+    margin-top: -1px;
+}
+
+.status-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.status-details button {
+    display: inline-block;
+    width: 120px;
+    font-size: 0.8rem;
+    border: none;
+    outline: none;
+    background-color: #2ec1ac;
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.status-details button.disabled {
+    background-color: #9ba4b4;
+    color: #f1f3f8;
+    cursor: unset;
+}
+
+.status-details p {
+    margin: 0;
+}
+.status-details h2 {
+    margin-top: -3px;
+    margin-bottom: 0;
+    color: #9ba4b4;
+    font-size: 1.6rem;
+}
+
+.status-line .circle.active {
+    background-color: #333;
+}
+
+.status-line .line.active {
+    height: 100%;
+    width: 0px;
+}

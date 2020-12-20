@@ -31,4 +31,9 @@ class bookingController extends Controller
         return view('booking/custConfirmBook');
     }
 
+    public function getBookingByID()
+    {
+        return view('booking/custViewBookStatus');
+    }
+
 }
