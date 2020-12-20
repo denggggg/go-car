@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BookingController;
-use App\Http\Controllers\driverController;
+use App\Http\Controllers\bookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +18,19 @@ Route::get('/', function () {
     return view('main-page');
 });
 
-Route::get('/customer/booking', [BookingController::class, 'customerBooking']);
-Route::post('/customer/booking', [BookingController::class, 'show']);
+Route::get('/customer/booking', [BookingController::class, 'addBookingByID']);
 
+Route::get('/customer/drivers', [BookingController::class, 'getDrivers']);
+Route::post('/customer/drivers', [BookingController::class, 'getDrivers']);
+
+Route::get('/customer/driver/1', [BookingController::class, 'getDriverByID']);
+Route::get('/customer/vehicle/1', [BookingController::class, 'getVehicleByID']);
+
+Route::post('/customer/confirm', [BookingController::class, 'confirmBookingByID']);
+Route::post('/customer/status', [BookingController::class, 'getBookingByID']);
+
+Route::get('/driver/booking', [BookingController::class, 'getDriverPendingBookingsByID']);
+Route::post('/driver/booking/1', [BookingController::class, 'getDriverAssignedBookingsByID']);
 
 Route::get('vehiclemenu', 'App\Http\Controllers\vehicleController@menuveh' );
 
@@ -34,3 +43,9 @@ Route::get('vehicleMaintenance', 'App\Http\Controllers\vehicleController@maintev
 Route::get('editform', 'App\Http\Controllers\vehicleController@editFormFunc' );
 
 Route::get('updtMaintenance', 'App\Http\Controllers\vehicleController@updateMaintenance' );
+
+Route::get('/driverRegister/driverRegistration', [driverController::class, 'addDriver']);
+Route::get('/driver/driverHomepage', [driverController::class, 'viewDriver']);
+Route::get('/driver/driverProfile', [driverController::class, 'viewDrivers']);
+Route::post('/driver/driverProfile', [driverController::class, 'updateDriver']);
+Route::get('/driver/driverBookingLog', [driverController::class, 'viewBookingLog']);
