@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/booking/booking.css') }}">
-  <title>GoCar | Customer Booking | Driver List</title>
+  <title>GoCar | Driver profile</title>
 </head>
 
 <body>
@@ -30,37 +30,24 @@
     </div>
   </nav>
 
-  <section id="cust-driver-list" class="container">
-    <h2 class="py-4">List of Available Drivers</h2>
-    <div class="driver-list py-3">
-      <div class="driver">
-        <img src="{{ asset('img/driver.png') }}" alt="driver image" class="mr-3" />
-        <div class="driver-info">
-          <p>John Maximus Wayne</p>
-          <p class="py-1">Proton X90 2016</p>
-          <div class="driver-info-btns">
-            <a class="py-1 px-3 mr-3" href="customer-driver-profile.html">View Driver</a>
-            <a class="py-1 px-3" href="">View Vehicle</a>
-          </div>
-        </div>
+  <section id="cust-driver-profile" class="container">
+    <h2 class="py-4">Driver Profile</h2>
+
+    <div class="profile ">
+      <div class="profile-pic border" >
+        <img src="{{ asset('img/driver.png') }}" alt="driver-profile">
+        <a href="http://127.0.0.1:8000/customer/driver" class="w-100 py-2">Back</a>
       </div>
-      <a class="driver-book-btn" href="">Book</a>
-    </div>
-    <div class="driver-list py-3">
-      <div class="driver">
-        <img src="{{ asset('img/driver.png') }}" alt="driver image" class="mr-3" />
-        <div class="driver-info">
-          <p>John Maximus Wayne</p>
-          <p class="py-1">Proton X90 2016</p>
-          <div class="driver-info-btns">
-            <a class="py-1 px-3 mr-3" href="customer-driver-profile.html">View Driver</a>
-            <a class="py-1 px-3" href="">View Vehicle</a>
-          </div>
-        </div>
+      <div class="profile-details">
+        <p class="details">Full Name: <span>Alif Iskandar bin Azura</span></p>
+        <p class="details">Telephone Number: <span>0191234123</span></p>
+        <p class="details">License Expiry Date: <span>09/10/23</span></p>
       </div>
-      <a class="driver-book-btn" href="">Book</a>
     </div>
+
   </section>
+
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

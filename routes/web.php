@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BookingController;
+use App\Http\Controllers\bookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +18,13 @@ Route::get('/', function () {
     return view('main-page');
 });
 
-Route::get('/customer/booking', [BookingController::class, 'customerBooking']);
-Route::post('/customer/booking', [BookingController::class, 'show']);
+Route::get('/customer/booking', [BookingController::class, 'addBookingByID']);
 
+Route::get('/customer/driver', [BookingController::class, 'getDrivers']);
+Route::post('/customer/driver', [BookingController::class, 'getDrivers']);
+
+Route::get('/customer/driver/1', [BookingController::class, 'getDriverByID']);
+Route::get('/customer/vehicle/1', [BookingController::class, 'getVehicleByID']);
 
 
 Route::get('vehiclemenu', 'App\Http\Controllers\vehicleController@menuveh' );

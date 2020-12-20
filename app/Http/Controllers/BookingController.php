@@ -4,15 +4,28 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class BookingController extends Controller
+class bookingController extends Controller
 {
-    public function customerBooking()
+    public function addBookingByID()
     {
-        return view('booking/customer-booking');
+        return view('booking/custAddBook');
     }
 
-    public function show()
+    public function getDrivers()
     {
-        return view('booking/customer-booking');
+        return view('booking/custViewDrivers');
     }
+
+    public function getDriverByID()
+    {
+        return view('booking/custViewDriver');
+    }
+
+    public function getVehicleByID()
+    {
+        return view('booking/custViewVehicle');
+    }
+    
+
+
 }

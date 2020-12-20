@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/booking/booking.css') }}">
-  <title>GoCar | Customer Booking</title>
+  <title>GoCar | Driver List</title>
 </head>
 
 <body>
@@ -30,34 +30,40 @@
     </div>
   </nav>
 
-  <section id="cust-booking" class="container">
-    <h2 class="py-4">Start Booking</h2>
+  <section id="cust-driver-list" class="container">
+    <h2 class="py-4">List of Available Drivers</h2>
+    
     <form method="POST">
-      @csrf
-      <div id="cust-booking-form" class="p-4">
-        <div class="booking-input">
-          <div class="location">
-            <p>Pick Up Location:</p>
-            <input class="inputs py-2 px-3" type="text" placeholder="Address Street Name.." />
-          </div>
-          <div class="zipcode">
-            <p>Zipcode:</p>
-            <input class="inputs py-2 px-3" type="text" placeholder="00000" />
-          </div>
-        </div>
-        <div class="booking-input mt-4">
-          <div class="location">
-            <p>Drop Off Location:</p>
-            <input class="inputs py-2 px-3" type="text" placeholder="Address Street Name.." />
-          </div>
-          <div class="zipcode">
-            <p>Zipcode:</p>
-            <input class="inputs py-2 px-3" type="text" placeholder="00000" />
+    @csrf
+    <div class="driver-list py-3">
+      
+      <div class="driver">
+        <img src="{{ asset('img/driver.png') }}" alt="driver image" class="mr-3" />
+        <div class="driver-info">
+          <p>John Maximus Wayne</p>
+          <p class="py-1">Proton X90 2016</p>
+          <div class="driver-info-btns">
+            <a class="py-1 px-3 mr-3" href="http://127.0.0.1:8000/customer/driver/1">View Driver</a>
+            <a class="py-1 px-3" href="http://127.0.0.1:8000/customer/vehicle/1">View Vehicle</a>
           </div>
         </div>
-        <input type="submit" value="Book Now" class="booking-btn mt-3" />
-        <!-- <a href="customer-driver-list.html" class="booking-btn mt-3">Book Now</a> -->
       </div>
+      <input type="submit" value="Book" class="driver-book-btn" />
+    </div>
+    <div class="driver-list py-3">
+      <div class="driver">
+        <img src="{{ asset('img/driver.png') }}" alt="driver image" class="mr-3" />
+        <div class="driver-info">
+          <p>John Maximus Wayne</p>
+          <p class="py-1">Proton X90 2016</p>
+          <div class="driver-info-btns">
+            <a class="py-1 px-3 mr-3" href="http://127.0.0.1:8000/customer/driver/1">View Driver</a>
+            <a class="py-1 px-3" href="http://127.0.0.1:8000/customer/vehicle/1">View Vehicle</a>
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="Book" class="driver-book-btn" />
+    </div>
     </form>
   </section>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
