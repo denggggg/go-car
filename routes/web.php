@@ -49,3 +49,23 @@ Route::get('/driver/driverHomepage', [driverController::class, 'viewDriver']);
 Route::get('/driver/driverProfile', [driverController::class, 'viewDrivers']);
 Route::post('/driver/driverProfile', [driverController::class, 'updateDriver']);
 Route::get('/driver/driverBookingLog', [driverController::class, 'viewBookingLog']);
+
+Route::get('/customerregistration', function () {
+    return view('customer/customerRegistration');
+});
+
+Route::get('/customerhomepage', function () {
+    return view('customer/customerhp');
+});
+
+Route::get('/customerlogin', function () {
+    return view('customer/customerLogin');
+});
+
+Route::get('/customerbookinghistory', function () {
+    return view('customer/bookingHistory');
+});
+
+Route::get('/customerprofile', function () {
+    return view('customer/customerprofile');
+});
