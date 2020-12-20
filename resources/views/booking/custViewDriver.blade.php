@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/f252491b10.js" crossorigin="anonymous"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/booking/booking.css') }}">
@@ -36,7 +38,10 @@
     <div class="profile ">
       <div class="profile-pic border" >
         <img src="{{ asset('img/driver.png') }}" alt="driver-profile">
-        <a href="http://127.0.0.1:8000/customer/driver" class="w-100 py-2">Back</a>
+        <a href="http://127.0.0.1:8000/customer/drivers" class="w-100 py-2">
+          <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+          Back
+        </a>
       </div>
       <div class="profile-details">
         <p class="details">Full Name: <span>Alif Iskandar bin Azura</span></p>

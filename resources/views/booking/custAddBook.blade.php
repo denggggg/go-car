@@ -32,7 +32,7 @@
 
   <section id="cust-booking" class="container">
     <h2 class="py-4">Start Booking</h2>
-    <form method="POST" action="/customer/driver">
+    <form method="POST" action="/customer/drivers">
       @csrf
       <div id="cust-booking-form" class="p-4">
         <div class="booking-input">

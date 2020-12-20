@@ -26,6 +26,9 @@ class bookingController extends Controller
         return view('booking/custViewVehicle');
     }
     
-
+    public function confirmBookingByID()
+    {
+        return view('booking/custConfirmBook');
+    }
 
 }

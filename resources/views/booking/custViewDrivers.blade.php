@@ -33,7 +33,7 @@
   <section id="cust-driver-list" class="container">
     <h2 class="py-4">List of Available Drivers</h2>
     
-    <form method="POST">
+    <form method="POST" action="/customer/confirm">
     @csrf
     <div class="driver-list py-3">
       
