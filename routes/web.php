@@ -19,7 +19,10 @@ Route::get('/', function () {
     return view('main-page');
 });
 
-Route::get('/customer/booking', [BookingController::class, 'addBookingByID']);
+// <==================== Booking ==========================================>
+
+Route::get('/customer/booking', [BookingController::class, 'createBookingForm']);
+Route::post('/customer/booking', [BookingController::class, 'addBooking'])->name('booking.store');
 
 Route::get('/customer/drivers', [BookingController::class, 'getDrivers']);
 Route::post('/customer/drivers', [BookingController::class, 'getDrivers']);
@@ -32,6 +35,8 @@ Route::post('/customer/status', [BookingController::class, 'getBookingByID']);
 
 Route::get('/driver/booking', [BookingController::class, 'getDriverPendingBookingsByID']);
 Route::post('/driver/booking/1', [BookingController::class, 'getDriverAssignedBookingsByID']);
+
+// <==================== Vehicle ==========================================>
 
 Route::get('vehiclemenu', 'App\Http\Controllers\vehicleController@menuveh' );
 

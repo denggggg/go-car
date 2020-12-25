@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class BookingModel extends Model
+class bookingModel extends Model
 {
     use HasFactory;
-    public $fillable = ['bookCustPickUp', 'bookCustDropOff'];
+    public $fillable = ['custPickUpLoc', 'custDropLoc', 'bookStatus', 'custID', 'driverID'];
 }

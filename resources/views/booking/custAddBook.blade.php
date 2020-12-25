@@ -32,31 +32,45 @@
 
   <section id="cust-booking" class="container">
     <h2 class="py-4">Start Booking</h2>
-    <form method="POST" action="/customer/drivers">
+
+    @if(Session::has('success'))
+            <div class="alert alert-success">
+                {{Session::get('success')}}
+            </div>
+        @endif
+    
+    <form action="" method="POST" action="{{ route('booking.store') }}">
       @csrf
       <div id="cust-booking-form" class="p-4">
         <div class="booking-input">
           <div class="location">
             <p>Pick Up Location:</p>
-            <input class="inputs py-2 px-3" type="text" placeholder="Address Street Name.." />
+            <input class="inputs py-2 px-3 {{ $errors->has('pickup') ? 'error' : '' }}" type="text" placeholder="Address Street Name.." name="pickup" />
           </div>
           <div class="zipcode">
             <p>Zipcode:</p>
-            <input class="inputs py-2 px-3" type="text" placeholder="00000" />
+            <input class="inputs py-2 px-3 {{ $errors->has('pickup-zip') ? 'error' : '' }}" type="text" placeholder="00000" name="pickup-zip" />
           </div>
         </div>
         <div class="booking-input mt-4">
           <div class="location">
             <p>Drop Off Location:</p>
-            <input class="inputs py-2 px-3" type="text" placeholder="Address Street Name.." />
+            <input class="inputs py-2 px-3 {{ $errors->has('dropoff') ? 'error' : '' }}" type="text" placeholder="Address Street Name.." name="dropoff"/>
           </div>
           <div class="zipcode">
             <p>Zipcode:</p>
-            <input class="inputs py-2 px-3" type="text" placeholder="00000" />
+            <input class="inputs py-2 px-3 {{ $errors->has('dropoff-zip') ? 'error' : '' }}" type="text" placeholder="00000" name="dropoff-zip"/>
           </div>
         </div>
+
+        <!-- Error -->
+        @if ($errors->has('pickup') or $errors->has('pickup-zip') or $errors->has('dropoff') or $errors->has('dropoff-zip'))
+        <div class="alert alert-danger py-2 px-3 mt-3">
+            <p class="text-center ">Please fill up the required input(s)</p>
+        </div>
+        @endif
+
         <input type="submit" value="Book Now" class="booking-btn mt-3" />
-        <!-- <a href="customer-driver-list.html" class="booking-btn mt-3">Book Now</a> -->
       </div>
     </form>
   </section>

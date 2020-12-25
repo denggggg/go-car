@@ -23,6 +23,9 @@ a {
     margin-top: 6px;
 }
 
+.error {
+    border: 2px solid red;
+}
 .nav-cust {
     background-color: black;
     color: white;
