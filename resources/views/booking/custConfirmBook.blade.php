@@ -35,9 +35,9 @@
   <section id="cust-confirm" class="container">
     <h2 class="py-4">Booking Confirmation</h2>
     <h3 class="mt-4">Booking Details</h3>
-    <div >
-      <p class="mt-2"> &#xf3c5; &nbsp; Pick up location : 26600 Universiti Malaysia Pahang</p>
-      <p class="mt-3"> &#xf276; &nbsp; Drop off location : 26600 KK5 Basketball Court</p>
+    <div>
+      <p class="mt-2"> &#xf3c5; &nbsp; Pick up location : {{$data['custPickUpLoc']}}</p>
+      <p class="mt-3"> &#xf276; &nbsp; Drop off location : {{$data['custDropLoc']}}</p>
     </div>
 
     <h3 class="driver-details">Driver Details</h3>
@@ -50,7 +50,7 @@
       </div>
     </div>
 
-    <form method="POST" action="/customer/status">
+    <form method="POST" action="">
     @csrf
       <input type="submit" value="Confirm Booking" class="cust-confirm-btn" />
     </form>

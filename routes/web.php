@@ -22,16 +22,18 @@ Route::get('/', function () {
 // <==================== Booking ==========================================>
 
 Route::get('/customer/booking', [BookingController::class, 'createBookingForm']);
-Route::post('/customer/booking', [BookingController::class, 'addBooking'])->name('booking.store');
+Route::post('/customer/booking', [BookingController::class, 'addBookingByID'])->name('booking.store');
 
-Route::get('/customer/drivers', [BookingController::class, 'getDrivers']);
-Route::post('/customer/drivers', [BookingController::class, 'getDrivers']);
+Route::get('/customer/booking/{id}/drivers', [BookingController::class, 'getDrivers']);
+Route::post('/customer/booking/{id}/drivers', [BookingController::class, 'addDrivers']);
 
-Route::get('/customer/driver/1', [BookingController::class, 'getDriverByID']);
-Route::get('/customer/vehicle/1', [BookingController::class, 'getVehicleByID']);
+Route::get('/customer/booking/{id}/driver/{driverID}', [BookingController::class, 'getDriverByID']);
+Route::get('/customer/booking/{id}/vehicle/{vehID}', [BookingController::class, 'getVehicleByID']);
 
-Route::post('/customer/confirm', [BookingController::class, 'confirmBookingByID']);
-Route::post('/customer/status', [BookingController::class, 'getBookingByID']);
+Route::get('/customer/booking/{id}/confirm', [BookingController::class, 'getBookingDetails']);
+Route::post('/customer/booking/{id}/confirm', [BookingController::class, 'confirmBookingByID']);
+
+Route::get('/customer/booking/{id}/status', [BookingController::class, 'getBookingStatus']);
 
 Route::get('/driver/booking', [BookingController::class, 'getDriverPendingBookingsByID']);
 Route::post('/driver/booking/1', [BookingController::class, 'getDriverAssignedBookingsByID']);

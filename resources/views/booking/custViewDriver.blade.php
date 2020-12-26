@@ -38,7 +38,7 @@
     <div class="profile ">
       <div class="profile-pic border" >
         <img src="{{ asset('img/driver.png') }}" alt="driver-profile">
-        <a href="http://127.0.0.1:8000/customer/drivers" class="w-100 py-2">
+        <a href="{{url('/customer/booking/'.$id.'/drivers')}}" class="w-100 py-2">
           <i class="fa fa-angle-double-left" aria-hidden="true"></i>
           Back
         </a>

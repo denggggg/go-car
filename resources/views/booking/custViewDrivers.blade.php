@@ -33,7 +33,7 @@
   <section id="cust-driver-list" class="container">
     <h2 class="py-4">List of Available Drivers</h2>
     
-    <form method="POST" action="/customer/confirm">
+    <form action="" method="POST" >
     @csrf
     <div class="driver-list py-3">
       
@@ -43,27 +43,32 @@
           <p>John Maximus Wayne</p>
           <p class="py-1">Proton X90 2016</p>
           <div class="driver-info-btns">
-            <a class="py-1 px-3 mr-3" href="http://127.0.0.1:8000/customer/driver/1">View Driver</a>
-            <a class="py-1 px-3" href="http://127.0.0.1:8000/customer/vehicle/1">View Vehicle</a>
+            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/'.$id.'/driver/1')}}">View Driver</a>
+            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/'.$id.'/vehicle/1')}}">View Driver</a>
           </div>
         </div>
       </div>
+      <input type="hidden" value="1" name="driverID" />
       <input type="submit" value="Book" class="driver-book-btn" />
+    </form>
     </div>
+    <form action="" method="POST" >
+    @csrf
     <div class="driver-list py-3">
+      
       <div class="driver">
         <img src="{{ asset('img/driver.png') }}" alt="driver image" class="mr-3" />
         <div class="driver-info">
           <p>John Maximus Wayne</p>
           <p class="py-1">Proton X90 2016</p>
           <div class="driver-info-btns">
-            <a class="py-1 px-3 mr-3" href="http://127.0.0.1:8000/customer/driver/1">View Driver</a>
-            <a class="py-1 px-3" href="http://127.0.0.1:8000/customer/vehicle/1">View Vehicle</a>
+            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/'.$id.'/driver/2')}}">View Driver</a>
+            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/'.$id.'/vehicle/2')}}">View Driver</a>
           </div>
         </div>
       </div>
+      <input type="hidden" value="2" name="driverID" />
       <input type="submit" value="Book" class="driver-book-btn" />
-    </div>
     </form>
   </section>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -13,7 +13,7 @@ class CreateBookingModelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('booking_models', function (Blueprint $table) {
+        Schema::create('booking', function (Blueprint $table) {
             $table->id();
             $table->string('custPickUpLoc');
             $table->string('custDropLoc');
@@ -31,6 +31,6 @@ class CreateBookingModelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('booking_models');
+        Schema::dropIfExists('booking');
     }
 }

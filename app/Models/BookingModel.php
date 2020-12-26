@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class bookingModel extends Model
 {
+    protected $table = 'booking';
     use HasFactory;
     public $fillable = ['custPickUpLoc', 'custDropLoc', 'bookStatus', 'custID', 'driverID'];
 }

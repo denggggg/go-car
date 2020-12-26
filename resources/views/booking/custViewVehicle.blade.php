@@ -37,7 +37,7 @@
 
     <div class="profile ">
       <div class="vehicle-profile-pic" >
-        <a href="http://127.0.0.1:8000/customer/drivers" class="w-100 py-2">
+        <a href="{{url('/customer/booking/'.$id.'/drivers')}}" class="w-100 py-2">
           <i class="fa fa-angle-double-left" aria-hidden="true"></i>
           Back
         </a>

@@ -33,18 +33,63 @@
   <section id="booking-status" class="container mt-4">
       <h2 class="text-center mb-4">Booking Status</h2>
 
+
+      @if ($data->bookStatus=="CONFIRMED")
+        <div class="status">
+          <div class="status-line mx-3 ">
+            <div class="circle active"></div>
+            <div class="line active"></div>
+          </div>
+          <div class="status-details">
+            <h2 class="active">Order Created</h2>
+            <p class="active">
+              Please wait for the driver to accept your request. 
+            </p>
+          </div>
+        </div>
+      @endif
+
+      @if ($data->bookStatus=="ACCEPTED")
+      <div class="status">
+          <div class="status-line mx-3 ">
+            <div class="circle "></div>
+            <div class="line "></div>
+          </div>
+          <div class="status-details">
+            <h2>Order Created</h2>
+            <p>
+              Please wait for the driver to accept your request. 
+            </p>
+          </div>
+        </div>
+
       <div class="status">
         <div class="status-line mx-3">
-          <div class="circle"></div>
-          <div class="line"></div>
+          <div class="circle active"></div>
+          <div class="line active"></div>
         </div>
         <div class="status-details">
-          <h2>Order Created</h2>
-          <p>
-            Please wait for the driver to accept your request. 
+          <h2 class="active">Order Accepted</h2>
+          <p class="active">
+            Your driver is coming to your location.
           </p>
         </div>
       </div>
+      @endif
+      
+      @if ($data->bookStatus=="PICKED UP")
+      <div class="status">
+          <div class="status-line mx-3 ">
+            <div class="circle "></div>
+            <div class="line "></div>
+          </div>
+          <div class="status-details">
+            <h2>Order Created</h2>
+            <p>
+              Please wait for the driver to accept your request. 
+            </p>
+          </div>
+        </div>
 
       <div class="status">
         <div class="status-line mx-3">
@@ -61,17 +106,58 @@
 
       <div class="status">
         <div class="status-line mx-3">
-          <div class="circle"></div>
-          <div class="line"></div>
+          <div class="circle active"></div>
+          <div class="line active"></div>
         </div>
         <div class="status-details">
-          <h2>Picked Up</h2>
-          <p>
+          <h2 class="active">Picked Up</h2>
+          <p class="active">
             The driver has picked you up at your location.
           </p>
         </div>
       </div>
+      @endif
 
+      @if ($data->bookStatus=="DELIVERED")
+      <div class="status">
+          <div class="status-line mx-3 ">
+            <div class="circle "></div>
+            <div class="line "></div>
+          </div>
+          <div class="status-details">
+            <h2>Order Created</h2>
+            <p>
+              Please wait for the driver to accept your request. 
+            </p>
+          </div>
+        </div>
+
+      <div class="status">
+        <div class="status-line mx-3">
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+        <div class="status-details">
+          <h2>Order Accepted</h2>
+          <p>
+            Your driver is coming to your location.
+          </p>
+        </div>
+      </div>
+
+      <div class="status">
+        <div class="status-line mx-3">
+          <div class="circle "></div>
+          <div class="line "></div>
+        </div>
+        <div class="status-details">
+          <h2 >Picked Up</h2>
+          <p >
+            The driver has picked you up at your location.
+          </p>
+        </div>
+      </div>
+    
       <div class="status">
         <div class="status-line mx-3">
           <div class="circle active"></div>
@@ -86,6 +172,9 @@
           </p>
         </div>
       </div>
+      @endif
+      <!-- 
+       -->
   </section>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
