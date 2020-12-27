@@ -45,17 +45,19 @@ Route::post('/driver/booking/{id}', [BookingController::class, 'driverUpdateAssi
 
 // <==================== Vehicle ==========================================>
 
-Route::get('vehiclemenu', 'App\Http\Controllers\vehicleController@menuveh' );
+Route::get('vehicleMenu', 'App\Http\Controllers\vehicleController@menuVehicle' );//@functionName
 
-Route::get('vehicleadd', 'App\Http\Controllers\vehicleController@addveh' );
+Route::get('vehicleAdd', 'App\Http\Controllers\vehicleController@gotoaddvehicle' );
 
-Route::get('vehicleedit', 'App\Http\Controllers\vehicleController@editveh' );
+Route::get('vehicleEdit', 'App\Http\Controllers\vehicleController@editVehicle' );
 
-Route::get('vehicleMaintenance', 'App\Http\Controllers\vehicleController@mainteveh' );
+Route::get('vehicleMaintenance', 'App\Http\Controllers\vehicleController@maintenanceVehicle' );
 
-Route::get('editform', 'App\Http\Controllers\vehicleController@editFormFunc' );
+Route::get('vehicleEditForm', 'App\Http\Controllers\vehicleController@editFormFunc' );
 
-Route::get('updtMaintenance', 'App\Http\Controllers\vehicleController@updateMaintenance' );
+Route::get('updateMaintenance', 'App\Http\Controllers\vehicleController@updateMaintenance' );
+
+Route::post('submit', 'App\Http\Controllers\vehicleController@addVehicle');//post from form to controller
 
 // <==================== Driver ==========================================>
 Route::get('/driverRegister/driverRegistration', [driverController::class, 'createDriverForm']);
