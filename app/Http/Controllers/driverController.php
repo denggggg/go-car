@@ -24,18 +24,23 @@ class driverController extends Controller
          $driver->save();
          return redirect('/driver/driverHomepage');
     }
+
     public function viewDriver()
     {
         return view('driver/driverHomepage');
     }
-    public function viewDrivers()
+
+    public function viewDrivers($id)
     {
-        return view('driver/driverProfile');
+        $data = driverModel::find($id);
+        return view('driver/driverProfile')-> with ('data', $data);
     }
+
     public function updateDriver()
     {
         return view('driver/driverProfile');
     }
+
     public function viewBookingLog()
     {
         return view('driver/driverBookingLog');

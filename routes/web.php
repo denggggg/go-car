@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\bookingController;
 use App\Http\Controllers\driverController;
+use App\Http\Controllers\customerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,17 +45,21 @@ Route::post('/driver/booking/{id}', [BookingController::class, 'driverUpdateAssi
 
 // <==================== Vehicle ==========================================>
 
-Route::get('vehiclemenu', 'App\Http\Controllers\vehicleController@menuveh' );
+Route::get('vehicleMenu', 'App\Http\Controllers\vehicleController@menuVehicle' );//@functionName
 
-Route::get('vehicleadd', 'App\Http\Controllers\vehicleController@addveh' );
+Route::get('vehicleAdd', 'App\Http\Controllers\vehicleController@gotoaddvehicle' );
 
-Route::get('vehicleedit', 'App\Http\Controllers\vehicleController@editveh' );
+Route::get('vehicleEdit', 'App\Http\Controllers\vehicleController@editVehicle' );
 
-Route::get('vehicleMaintenance', 'App\Http\Controllers\vehicleController@mainteveh' );
+Route::get('vehicleMaintenance', 'App\Http\Controllers\vehicleController@maintenanceVehicle' );
 
-Route::get('editform', 'App\Http\Controllers\vehicleController@editFormFunc' );
+Route::get('vehicleEditForm', 'App\Http\Controllers\vehicleController@viewVehicle' );//...
 
-Route::get('updtMaintenance', 'App\Http\Controllers\vehicleController@updateMaintenance' );
+Route::get('updateMaintenance', 'App\Http\Controllers\vehicleController@updateMaintenance' );
+
+Route::post('submit', 'App\Http\Controllers\vehicleController@addVehicle');//post from form to controller
+
+Route::get('viewVehicle', 'App\Http\Controllers\vehicleController@viewVehicle' );//...
 
 // <==================== Driver ==========================================>
 Route::get('/driverRegister/driverRegistration', [driverController::class, 'createDriverForm']);
@@ -64,22 +69,27 @@ Route::get('/driver/driverProfile', [driverController::class, 'viewDrivers']);
 Route::post('/driver/driverProfile', [driverController::class, 'updateDriver']);
 Route::get('/driver/driverBookingLog', [driverController::class, 'viewBookingLog']);
 
-Route::get('/customerregistration', function () {
-    return view('customer/customerRegistration');
-});
+// <==================== Customer ==========================================>
+Route::get('customer/register', [customerController::class, 'customerRegistration']);
+Route::post('customer/register', [customerController::class, 'addCustomer']);
 
-Route::get('/customerhomepage', function () {
-    return view('customer/customerhp');
-});
+Route::get('customer/profile/{id}', [customerController::class, 'customerprofile']);
+// Route::get('/customerregistration', function () {
+//     return view('customer/customerRegistration');
+// });
 
-Route::get('/customerlogin', function () {
-    return view('customer/customerLogin');
-});
+// Route::get('/customer/homepage', function () {
+//     return view('customer/customerhp');
+// });
 
-Route::get('/customerbookinghistory', function () {
-    return view('customer/bookingHistory');
-});
+// Route::get('/customerlogin', function () {
+//     return view('customer/customerLogin');
+// });
 
-Route::get('/customerprofile', function () {
-    return view('customer/customerprofile');
-});
+// Route::get('/customerbookinghistory', function () {
+//     return view('customer/bookingHistory');
+// });
+
+// Route::get('/customerprofile', function () {
+//     return view('customer/customerprofile');
+// });
