@@ -50,12 +50,12 @@
 	  </div>
       <div class="driver-profile">
 
-		<div class="detail"><span class="first">Name:</span> <span></span></div>
-		<div class="detail mt-2"><span class="first">E-mail:</span><span><input type="text" class="input-driver"></span></div>
-		<div class="detail mt-2"><span class="first">Password:</span><span><input type="text" class="input-driver"></span></div>
-		<div class="detail mt-2"><span class="first">Phone Number:</span><span><input type="text" class="input-driver"></span></div>
-		<div class="detail mt-2"><span class="first">License expiry date:</span><span><input type="text" class="input-driver"></span></div>
-		<div class="detail mt-2"><span class="first">Address:</span><span><textarea class="input-driver"></textarea></span></div>
+		<div class="detail"><span class="first">Name:</span> <span>{{$data['driverName']}}</span></div>
+		<div class="detail mt-2"><span class="first">E-mail:</span><span><input type="text" class="input-driver" value="{{$data['driverEmail']}}"></span></div>
+		<div class="detail mt-2"><span class="first">Password:</span><span><input type="text" class="input-driver" value="{{$data['driverPwd']}}"></span></div>
+		<div class="detail mt-2"><span class="first">Phone Number:</span><span><input type="text" class="input-driver" value="{{$data['driverPhone']}}"></span></div>
+		<div class="detail mt-2"><span class="first">License expiry date:</span><span><input type="text" class="input-driver" value="{{$data['driverLicense']}}"></span></div>
+		<div class="detail mt-2"><span class="first">Address:</span><span><textarea class="input-driver">{{$data['driverAdress']}}</textarea></span></div>
 		
 		<div class="driver-button"><a href="http://127.0.0.1:8000/driver/driverHomepage" class="driver-click mr-3">Cancel</a> <input type="submit" value="Update Profile" class="driver-click"></div>
     </div>

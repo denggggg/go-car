@@ -55,6 +55,7 @@ class bookingController extends Controller
     {
         bookingModel::where('id', $id)->update(['driverID'=> request('driverID')]);
         return redirect('/customer/booking/'.$id.'/confirm');
+        
     }
 
     // GET method
