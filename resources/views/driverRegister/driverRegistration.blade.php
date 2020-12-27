@@ -1,121 +1,74 @@
-<!-- 
-/*
- *	This content is generated from the PSD File Info.
- *	(Alt+Shift+Ctrl+I).
- *
- *	@desc 		
- *	@file 		driver_dashboard
- *	@date 		0
- *	@title 		Falah
- *	@author 	
- *	@keywords 	
- *	@generator 	Export Kit v1.3.figma
- *
-*/
- -->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
-	<head>
-		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
-		<title>driver_dashboard</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="" >
-		<link rel="StyleSheet" href="{{ asset('css/driver/driver_dashboard.css') }}" />
-		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
-		<!-- Add your custom HEAD content here -->
+<html lang="en">
 
-	</head>
-	<body>
-		<div id="content-container" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/f252491b10.js" crossorigin="anonymous"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/driver/driver_registration.css') }}">
+  <title>GoCar | Driver profile</title>
+</head>
 
+<body>
+  <nav class="navbar navbar-expand-lg nav-cust py-3">
+    <div class="container">
+      <div class="nav-title">
+        <a href="../../index.html">GoCar | Driver</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-			<div id="page_driver_registration_ek1"  >
-				<div id="_bg__driver_registration_ek2"  ></div>
-				<div id="rectangle_1_ek1"  ></div>
-				<div id="gocar___driver_ek1" >
-					GoCar | Driver
-				</div>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <button class="cust-logout">Log Out</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-				<div id="group_10_ek1"  >
+  <section id="cust-driver-register" class="container">
+    <h2 class="py-4">Driver Registration</h2>
 
-					<div id="group_9_ek4"  >
-						<div id="driver_registration_ek3" >
-							Driver Registration
-						</div>
-						<div id="rectangle_3_ek4"  ></div>
-						<img src="{{ asset('img/skins/rectangle_12.png') }}" id="rectangle_12" />
-						<img src="{{ asset('img/skins/rectangle_14.png') }}" id="rectangle_14" />
-						<img src="{{ asset('img/skins/rectangle_15.png') }}" id="rectangle_15" />
-						<img src="{{ asset('img/skins/rectangle_16.png') }}" id="rectangle_16" />
-						<img src="{{ asset('img/skins/rectangle_17.png') }}" id="rectangle_17" />
-						<img src="{{ asset('img/skins/rectangle_18.png') }}" id="rectangle_18" />
-						<img src="{{ asset('img/skins/rectangle_20.png') }}" id="rectangle_20" />
-						<img src="{{ asset('img/skins/rectangle_19.png') }}" id="rectangle_19" />
-
-						<div id="group_8_ek2"  >
-
-							<div id="group_11"  >
-								<div id="rectangle_11"  ></div>
-								<div id="register" >
-									REGISTER 
-								</div>
-
-							</div>
-
-						</div>
-						<div id="full_name_" >
-							Full Name: 
-						</div>
-						<div id="phone_number_" >
-							Phone Number:
-						</div>
-						<div id="picture_" >
-							Picture:
-						</div>
-						<div id="licence_expiry_date_" >
-							Licence Expiry Date:
-						</div>
-						<div id="email_" >
-							Email:
-						</div>
-						<div id="address_line__" >
-							Address Line :
-						</div>
-						<div id="password_" >
-							Password:
-						</div>
-
-					</div>
-
-				</div>
-				<div id="_09_10_2023" >
-					09/10/2023
-				</div>
-				<div id="alif_iskandar_bin_azura" >
-					Alif Iskandar bin Azura
-				</div>
-				<div id="alif_masdo_gmail_com" >
-					<a href="mailto:Alif_Masdo@gmail.com" target="_blank">Alif_Masdo@gmail.com</a>
-				</div>
-				<div id="masdo2020" >
-					Masdo2020
-				</div>
-				<div id="_0196448184" >
-					0196448184
-				</div>
-				<div id="universiti_malaysia_pahang__26600_pekan__pahang" >
-					Universiti Malaysia Pahang, 26600 <br/>Pekan, Pahang
-				</div>
-
-			</div>
-
-
-
-
-
-
-
-
+    <div class="register ">
+    <form method="POST" action="">
+      @csrf
+      <div class="driver-register">
+		<div class="detail"><span class="first">Full Name:</span> <span><input type="text" name="Fname" class="input-driver"></span></div>
+		<div class="detail mt-2"><span class="first">E-mail:</span><span><input type="text"  name="email"class="input-driver"></span></div>
+		<div class="detail mt-2"><span class="first">Password:</span><span><input type="text"  name="password"class="input-driver"></span></div>
+		<div class="detail mt-2"><span class="first">Phone Number:</span><span><input type="text"  name="phone"class="input-driver"></span></div>
+		<div class="detail mt-2"><span class="first">Address:</span><span><textarea  name="address"class="input-driver"></textarea></span></div>
+		<div class="detail mt-2"><span class="first">License expiry date:</span><span><input type="text"  name="license" class="input-driver"></span></div>
+		
+		<div class="detail mt-2"><span class="first">picture:</span>
+			<span>
+				<div class="profile-pic" >
+        			<img src="{{ asset('img/skins/rectangle_19.png') }}" alt="driver-register">
+        				<!--a href="http://127.0.0.1:8000/customer/drivers" class="w-100 py-2"> <i class="fa fa-angle-double-left" aria-hidden="true"></i>Back</a-->
+					<input type="file" name="picture" value="example.png" id="upload" hidden/>
+					<label for="upload"><i class="fa fa-arrow-circle-o-up"> </i> Upload file</label>
+				  </div>
+			</span>
 		</div>
-	</body>
+		<div class="detail mt-2"><span class="first"></span><span class="driver-button"><input type="submit" value="Register" class="driver-click"></span></div>
+		
+    </div>
+    </form>
+	</div>
+	
+
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
 </html>
