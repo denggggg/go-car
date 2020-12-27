@@ -18,7 +18,7 @@
          <div class="v17_95">
             <div class="v17_96">
                <div class="v17_97"></div>
-               <a href="http://127.0.0.1:8000/vehicleadd">
+               <a href="http://127.0.0.1:8000/vehicleAdd">
                   <span class="v17_98">Add Vehicle</button>
             </div>
             </a>
@@ -33,7 +33,7 @@
          <div class="v17_110">
             <div class="v17_111">
                <div class="v17_112"></div>
-               <a href="http://127.0.0.1:8000/vehicleedit">
+               <a href="http://127.0.0.1:8000/vehicleEdit">
                <span class="v17_113">Edit  Vehicle</span>
             </div>
          </div>
