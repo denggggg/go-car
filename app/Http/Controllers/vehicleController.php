@@ -35,6 +35,11 @@ class vehicleController extends Controller
         return view('vehicle/vehicleMenu');
 
     }
+    public function viewVehicle(){
+        $data = vehicleModel::where('vehicleID', 1)->get();
+
+        return view('vehicle/editForm')->with('data', $data);
+    }
 
     public function editVehicle(){
         return view('vehicle/vehicleEdit');//vehicle/namapageblade

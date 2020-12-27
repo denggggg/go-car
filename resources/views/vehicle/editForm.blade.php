@@ -30,22 +30,22 @@
          <span class="v41_11">Roadtax Expiry:</span>
          
          <!--model-->
-         <input class="v41_17" name= "modelEdit" type="text" placeholder="Car model"></input>
+         <input class="v41_17" name= "modelEdit" type="text" placeholder="{{$data[0]['vehicleModel']}}"></input>
          
          <!--reg.number-->
-         <input class="v41_18" name= "regEdit" type="text" placeholder="Plate number"></input>
+         <input class="v41_18" name= "regEdit" type="text" placeholder="{{$data[0]['vehicleRegNo']}}"></input>
          
          <!--engine cc-->
-         <input class="v41_29" name= "engEdit" type="text" placeholder="Engine CC"></input>
+         <input class="v41_29" name= "engEdit" type="text" placeholder="{{$data[0]['vehicleEngCC']}}"></input>
          
          <!--manu year-->
-         <input class="v41_35" name= "manufEdit" type="text" placeholder="Year made"></input>
+         <input class="v41_35" name= "manufEdit" type="text" placeholder="{{$data[0]['vehicleManYear']}}"></input>
          
          <!--vehicle colour-->
-         <input class="v41_15" name= "colorEdit" type="text" placeholder="Colour"></input>
+         <input class="v41_15" name= "colorEdit" type="text" placeholder="{{$data[0]['vehicleColour']}}"></input>
          
          <!--roadtax-->
-         <input class="v41_13" name= "rtaxEdit" type="text" placeholder="Roadtax expiry"></input>
+         <input class="v41_13" name= "rtaxEdit" type="text" placeholder="{{$data[0]['vehicleRoadTax']}}"></input>
          
          <!-- button -->
          <input type="submit" value="EDIT" class="v172_0">
