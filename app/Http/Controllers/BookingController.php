@@ -91,18 +91,62 @@ class bookingController extends Controller
     // url /customer/booking/{id}/status
     public function getBookingStatus($id)
     {
-        $data = bookingModel::find($id);
         return view('booking/custViewBookStatus')->with('data', $data);
     }
 
+    // GET method
+    // url /driver/booking
     public function getDriverPendingBookingsByID() 
     {
-        return view('booking/driverViewBook');
+        $data = bookingModel::where('driverID', 1)->where('bookStatus', "CREATED")->get();
+
+        return view('booking/driverViewBook')->with('data', $data);
     }
 
-    public function getDriverAssignedBookingsByID() 
+    // POST method
+    // url /driver/booking
+    public function driverUpdatePendingBooking(Request $request)
     {
-        return view('booking/driverUpdateBook');
+        $id = $request['id'];
+        if($request['accept']=="ACCEPT") {
+            bookingModel::where('id', $id)->update(['bookStatus'=> "ACCEPTED"]);
+        } else {
+            bookingModel::where('id', $id)->update(['bookStatus'=> "REJECTED"]);
+            return redirect('/driver/booking/');
+        }
+
+        return redirect('/driver/booking/'. $id);
+    }
+
+    // GET method
+    // url /driver/booking/{id}
+    public function getDriverAssignedBookingsByID($id) 
+    {
+        $data = bookingModel::where('driverID', 1)->where('id', $id)->get();
+        return view('booking/driverUpdateBook')->with('data', $data);
+    }
+
+    // POST method
+    // url /driver/booking/{id}
+    public function driverUpdateAssignedBooking(Request $request) 
+    {
+        $id = $request['id'];
+
+        if($request['pickup']=="PICK UP") {
+            bookingModel::where('id', $id)->update(['bookStatus'=> "PICKED UP"]);
+            return redirect('/driver/booking/'.$id);
+        } 
+        else if($request['deliver']=="DELIVERED") {
+            bookingModel::where('id', $id)->update(['bookStatus'=> "DELIVERED"]);
+            return redirect('/driver/booking/');
+        }
+        else {
+            bookingModel::where('id', $id)->update(['bookStatus'=> "CANCELLED"]);
+            return redirect('/driver/booking/');
+        }
+
+        
+        
     }
 
 }

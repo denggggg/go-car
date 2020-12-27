@@ -35,8 +35,12 @@ Route::post('/customer/booking/{id}/confirm', [BookingController::class, 'confir
 
 Route::get('/customer/booking/{id}/status', [BookingController::class, 'getBookingStatus']);
 
+
 Route::get('/driver/booking', [BookingController::class, 'getDriverPendingBookingsByID']);
-Route::post('/driver/booking/1', [BookingController::class, 'getDriverAssignedBookingsByID']);
+Route::post('/driver/booking', [BookingController::class, 'driverUpdatePendingBooking']);
+
+Route::get('/driver/booking/{id}', [BookingController::class, 'getDriverAssignedBookingsByID']);
+Route::post('/driver/booking/{id}', [BookingController::class, 'driverUpdateAssignedBooking']);
 
 // <==================== Vehicle ==========================================>
 

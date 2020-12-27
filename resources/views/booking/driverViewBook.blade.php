@@ -44,21 +44,30 @@
         </tr>
       </thead>
         <tbody>
-          <form method="POST" action="/driver/booking/1">
-          @csrf
+          @foreach ($data as $d)
+            
             <tr>
-              <th scope="row">1</th>
-              <td>123</td>
-              <td>26600 Universiti Malaysia Pahang</td>
-              <td>26600 KK5 Basketball Court </td>
+              <th scope="row">{{$loop->index }}</th>
+              <td>{{$d['id']}}</td>
+              <td>{{$d['custPickUpLoc']}}</td>
+              <td>{{$d['custDropLoc']}}</td>
               <td>
-                <input type="submit" value="ACCEPT" class="btn btn-block btn-accept">
+              <form method="POST" action="">
+              @csrf
+                <input type="submit" value="ACCEPT" class="btn btn-block btn-accept" name="accept">
+                <input type="hidden" value="{{$d['id']}}" name="id">
+              </form>
               </td>
               <td>
-                <input type="submit" value="REJECT" class="btn btn-block btn-reject">
+              <form method="POST" action="">
+              @csrf
+                <input type="submit" value="REJECT" class="btn btn-block btn-reject" name="reject">
+                <input type="hidden" value="{{$d['id']}}" name="id">
+              </form>
               </td>
+              
             </tr>
-          </form>
+          @endforeach
         </tbody>
     </table>
 

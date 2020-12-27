@@ -43,22 +43,51 @@
           <th scope="col"></th>
         </tr>
       </thead>
+      @if ($data[0]->bookStatus=="ACCEPTED")
         <tbody>
-          <form method="POST" action="/driver/booking/1">
-            <tr>
-              <th scope="row">1</th>
-              <td>123</td>
-              <td>26600 Universiti Malaysia Pahang</td>
-              <td>26600 KK5 Basketball Court </td>
-              <td>
-                <input type="submit" value="PICK UP" class="btn btn-block btn-accept">
-              </td>
-              <td>
-                <input type="submit" value="CANCEL" class="btn btn-block btn-reject">
-              </td>
-            </tr>
-          </form>
+              <tr>
+                <th scope="row">1</th>
+                <td>{{$data[0]['id']}}</td>
+                <td>{{$data[0]['custPickUpLoc']}}</td>
+                <td>{{$data[0]['custDropLoc']}} </td>
+                <td>
+                  <form method="POST" action="">
+                  @csrf
+                    <input type="submit" value="PICK UP" class="btn btn-block btn-accept" name="pickup">
+                    <input type="hidden" value="{{$data[0]['id']}}" name="id">
+                  </form>
+                </td>
+                <td>
+                  <form method="POST" action="">
+                  @csrf
+                    <input type="submit" value="CANCEL" class="btn btn-block btn-reject" name="cancel">
+                    <input type="hidden" value="{{$data[0]['id']}}" name="id">
+                  </form>
+                </td>
+              </tr>
         </tbody>
+      @endif
+      
+      @if ($data[0]->bookStatus=="PICKED UP")
+        <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>{{$data[0]['id']}}</td>
+                <td>{{$data[0]['custPickUpLoc']}}</td>
+                <td>{{$data[0]['custDropLoc']}} </td>
+                <td>
+                  <form method="POST" action="">
+                  @csrf
+                    <input type="submit" value="DELIVERED" class="btn btn-block btn-accept" name="deliver">
+                    <input type="hidden" value="{{$data[0]['id']}}" name="id">
+                  </form>
+                </td>
+                <td>
+                  
+                </td>
+              </tr>
+        </tbody>
+      @endif
     </table>
 
 
