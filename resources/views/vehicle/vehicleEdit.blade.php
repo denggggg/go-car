@@ -17,7 +17,7 @@
          </div>
          <div class="v17_219">
             <div class="v17_220"></div>
-            <a href="http://127.0.0.1:8000/editform">
+            <a href="http://127.0.0.1:8000/vehicleEditForm">
             <span class="v17_221"> Edit Information</span>
          </div>
          </a>

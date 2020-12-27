@@ -473,7 +473,8 @@
   .v17_81 {
     width: 238px;
     height: 57px;
-    background: url("../images/v17_81.png");
+    background: rgba(36,55,98,1);
+    color: rgba(255,255,255,1);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1359,6 +1360,7 @@
     top: 315px;
     left: 663px;
     border: 1px solid rgba(0,0,0,1);
+    font-size: 18px;
   }
   .v41_14 {
     width: 148px;
@@ -1381,6 +1383,7 @@
     top: 227px;
     left: 664px;
     border: 1px solid rgba(0,0,0,1);
+    font-size: 18px;
   }
   .v41_16 {
     width: 173px;
@@ -1392,7 +1395,8 @@
     left: 267px;
     border: 1px solid rgba(0,0,0,1);
   }
-  .v41_17 {
+  .v41_17  {
+    caret-color: auto;
     width: 328px;
     height: 47px;
     background: rgba(255,255,255,1);
@@ -1401,7 +1405,12 @@
     top: 228px;
     left: 267px;
     border: 1px solid rgba(0,0,0,1);
+    font-size: 18px;
+    padding-left: 15px;
+    
+
   }
+
   .v41_18 {
     width: 328px;
     height: 47px;
@@ -1411,6 +1420,7 @@
     top: 316px;
     left: 267px;
     border: 1px solid rgba(0,0,0,1);
+    font-size: 18px;
   }
   .v41_19 {
     width: 178px;
@@ -1424,6 +1434,8 @@
     top: 532px;
     left: 725px;
     overflow: hidden;
+    background: rgba(36,55,98,1);
+    color: rgba(255,255,255,1);
   }
   .v41_20 {
     width: 178px;
@@ -1457,6 +1469,8 @@
     background: url("../images/v172_0.png");
     background-repeat: no-repeat;
     background-position: center center;
+    background: rgba(36,55,98,1);
+    color: rgba(255,255,255,1);
     background-size: cover;
     opacity: 1;
     position: absolute;
@@ -1583,6 +1597,8 @@
     top: 403px;
     left: 267px;
     border: 1px solid rgba(0,0,0,1);
+    font-size: 18px;
+    
   }
   .v41_30 {
     width: 68px;
@@ -1651,6 +1667,7 @@
     top: 491px;
     left: 268px;
     border: 1px solid rgba(0,0,0,1);
+    font-size: 18px;
   }
   .v41_36 {
     width: 41px;
@@ -1839,6 +1856,7 @@
   top: 227px;
   left: 601px;
   border: 1px solid rgba(0,0,0,1);
+  font-size: 18px;
 }
 .v17_314 {
   width: 328px;
@@ -1849,6 +1867,7 @@
   top: 315px;
   left: 601px;
   border: 1px solid rgba(0,0,0,1);
+  font-size: 18px;
 }
 .v17_315 {
   width: 214px;
@@ -1862,7 +1881,10 @@
   top: 460px;
   left: 862px;
   overflow: hidden;
+  background: rgba(36,55,98,1);
+  color: rgba(255,255,255,1);
 }
+
 .v17_316 {
   width: 214px;
   height: 57px;
@@ -1958,6 +1980,7 @@
   top: 402px;
   left: 601px;
   border: 1px solid rgba(0,0,0,1);
+  font-size: 18px;
 }
 .v17_327 {
   width: 92px;
