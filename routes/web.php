@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\bookingController;
 use App\Http\Controllers\driverController;
+use App\Http\Controllers\customerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,22 +65,27 @@ Route::get('/driver/driverProfile', [driverController::class, 'viewDrivers']);
 Route::post('/driver/driverProfile', [driverController::class, 'updateDriver']);
 Route::get('/driver/driverBookingLog', [driverController::class, 'viewBookingLog']);
 
-Route::get('/customerregistration', function () {
-    return view('customer/customerRegistration');
-});
+// <==================== Customer ==========================================>
+Route::get('customer/register', [customerController::class, 'customerRegistration']);
+Route::post('customer/register', [customerController::class, 'addCustomer']);
 
-Route::get('/customerhomepage', function () {
-    return view('customer/customerhp');
-});
+Route::get('customer/profile/{id}', [customerController::class, 'customerprofile']);
+// Route::get('/customerregistration', function () {
+//     return view('customer/customerRegistration');
+// });
 
-Route::get('/customerlogin', function () {
-    return view('customer/customerLogin');
-});
+// Route::get('/customer/homepage', function () {
+//     return view('customer/customerhp');
+// });
 
-Route::get('/customerbookinghistory', function () {
-    return view('customer/bookingHistory');
-});
+// Route::get('/customerlogin', function () {
+//     return view('customer/customerLogin');
+// });
 
-Route::get('/customerprofile', function () {
-    return view('customer/customerprofile');
-});
+// Route::get('/customerbookinghistory', function () {
+//     return view('customer/bookingHistory');
+// });
+
+// Route::get('/customerprofile', function () {
+//     return view('customer/customerprofile');
+// });

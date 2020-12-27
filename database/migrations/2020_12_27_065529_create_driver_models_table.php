@@ -19,7 +19,7 @@ class CreateDriverModelsTable extends Migration
             $table->string('driverEmail');
             $table->string('driverPwd');
             $table->string('driverPhone');
-            $table->string('driverAdress');
+            $table->string('driverAddress');
             $table->dateTime('driverLicense');
             $table->string('driverPic');
             $table->timestamps();
