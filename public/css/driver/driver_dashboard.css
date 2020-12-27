@@ -1703,6 +1703,19 @@ div { position: absolute; }
 	border-radius: 6px;
 	background:rgba(36,55,98,1);
 }
+#but_update {
+	top: 0px;
+	left: 0px;
+	width: 232px;
+	height: 47.62px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background:rgb(98, 38, 36);
+
+}
 
 
 #update_profile {

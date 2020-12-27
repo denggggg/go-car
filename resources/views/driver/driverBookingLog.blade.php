@@ -1,155 +1,50 @@
-<!-- 
-/*
- *	This content is generated from the PSD File Info.
- *	(Alt+Shift+Ctrl+I).
- *
- *	@desc 		
- *	@file 		driver_dashboard
- *	@date 		0
- *	@title 		Falah
- *	@author 	
- *	@keywords 	
- *	@generator 	Export Kit v1.3.figma
- *
-*/
- -->
- <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
-	<head>
-		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
-		<title>driver_dashboard</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="" >
-		<link rel="StyleSheet" href="{{ asset('css/driver/driver_dashboard.css') }}" />
-		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
-		<!-- Add your custom HEAD content here -->
+<!DOCTYPE html>
+<html lang="en">
 
-	</head>
-	<body>
-		<div id="content-container" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/f252491b10.js" crossorigin="anonymous"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/driver/driver_profile.css') }}">
+  <title>GoCar | Customer Booking</title>
+</head>
 
+<body>
+  <nav class="navbar navbar-expand-lg nav-cust py-3">
+    <div class="container">
+      <div class="nav-title">
+        <a href="../../index.html">GoCar | Customer</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-			<div id="page_booking_log_ek2"  >
-				<div id="_bg__booking_log_ek3"  ></div>
-				<div id="rectangle_1_ek2"  ></div>
-				<div id="gocar" >
-					GoCar
-				</div>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <button class="cust-logout">Log Out</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-				<div id="group_1"  >
-					<div id="rectangle_2_ek1"  ></div>
-					<div id="log_out_ek1" >
-						Log Out
-					</div>
+  <section id="cust-confirm" class="container">
+	<h2 class="py-4">Booking Log</h2>
 
-				</div>
-				<div id="booking_log_ek4" >
-					Booking Log
-				</div>
-				<div id="customer_name" >
-					Customer Name
-				</div>
-				<div id="_11_08_2020" >
-					11/08/2020
-				</div>
-				<div id="_08_59am" >
-					08:59AM
-				</div>
-				<img src="{{ asset('img/skins/line_1.png') }}" id="line_1" />
-				<div id="gocar___driver_ek2" >
-					GoCar | Driver
-				</div>
+	<p class="cus-name">Customer Name</p>
+	<div class="viewLog">
+		<span><i class="fa fa-map-marker" style="color: orange;"></i> UMP Gambang</span><span>-</span><span><i class="fa fa-map-marker"></i> ECM Mall</span><span><i class="fa fa-calendar"></i> Date</span><span><i class="far fa-clock"></i> Time</span>
+	</div>
+   
+    
+  </section>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 
-				<div id="group_9_ek5"  >
-					<div id="rectangle_2_ek2"  ></div>
-					<div id="log_out_ek2" >
-						Log Out
-					</div>
-
-				</div>
-				<div id="ump_gambang_pahang" >
-					UMP Gambang Pahang
-				</div>
-				<div id="ecm_mall" >
-					ECM Mall
-				</div>
-				<img src="{{ asset('img/skins/drop_point_3.png') }}" id="drop_point_3" />
-				<img src="{{ asset('img/skins/pickup_point_3.png') }}" id="pickup_point_3" />
-				<div id="__" >
-					-
-				</div>
-				<img src="{{ asset('img/skins/calendar_1.png') }}" id="calendar_1" />
-				<img src="{{ asset('img/skins/clock_1.png') }}" id="clock_1" />
-				<div id="customer_name_ek1" >
-					Customer Name
-				</div>
-				<div id="_11_08_2020_ek1" >
-					11/08/2020
-				</div>
-				<div id="_08_59am_ek1" >
-					08:59AM
-				</div>
-				<img src="{{ asset('img/skins/line_4.png') }}" id="line_4" />
-				<div id="ump_gambang_pahang_ek1" >
-					UMP Gambang Pahang
-				</div>
-				<div id="ecm_mall_ek1" >
-					ECM Mall
-				</div>
-				<img src="{{ asset('img/skins/drop_point_6.png') }}" id="drop_point_6" />
-				<img src="{{ asset('img/skins/pickup_point_6.png') }}" id="pickup_point_6" />
-				<div id="___ek1" >
-					-
-				</div>
-				<img src="{{ asset('img/skins/calendar_4.png') }}" id="calendar_4" />
-				<img src="{{ asset('img/skins/clock_4.png') }}" id="clock_4" />
-				<div id="customer_name_ek2" >
-					Customer Name
-				</div>
-				<div id="_11_08_2020_ek2" >
-					11/08/2020
-				</div>
-				<div id="_08_59am_ek2" >
-					08:59AM
-				</div>
-				<img src="{{ asset('img/skins/line_2.png') }}" id="line_2" />
-				<div id="ump_gambang_pahang_ek2" >
-					UMP Gambang Pahang
-				</div>
-				<div id="ecm_mall_ek2" >
-					ECM Mall
-				</div>
-				<img src="{{ asset('img/skins/drop_point_4.png') }}" id="drop_point_4" />
-				<img src="{{ asset('img/skins/pickup_point_4.png') }}" id="pickup_point_4" />
-				<div id="___ek2" >
-					-
-				</div>
-				<img src="{{ asset('img/skins/calendar_2.png') }}" id="calendar_2" />
-				<img src="{{ asset('img/skins/clock_2.png') }}" id="clock_2" />
-				<div id="customer_name_ek3" >
-					Customer Name
-				</div>
-				<div id="_11_08_2020_ek3" >
-					11/08/2020
-				</div>
-				<div id="_08_59am_ek3" >
-					08:59AM
-				</div>
-				<img src="{{ asset('img/skins/line_3.png') }}" id="line_3" />
-				<div id="ump_gambang_pahang_ek3" >
-					UMP Gambang Pahang
-				</div>
-				<div id="ecm_mall_ek3" >
-					ECM Mall
-				</div>
-				<img src="{{ asset('img/skins/drop_point_5.png') }}" id="drop_point_5" />
-				<img src="{{ asset('img/skins/pickup_point_5.png') }}" id="pickup_point_5" />
-				<div id="___ek3" >
-					-
-				</div>
-				<img src="{{ asset('img/skins/calendar_3.png') }}" id="calendar_3" />
-				<img src="{{ asset('img/skins/clock_3.png') }}" id="clock_3" />
-			</div>
-		</div>
-	</body>
 </html>

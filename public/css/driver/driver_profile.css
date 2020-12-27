@@ -1,0 +1,481 @@
+body {
+    background: white;
+}
+
+p {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+a {
+    text-decoration: none;
+}
+.inputs {
+    border-radius: 6px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 6px;
+}
+
+.nav-cust {
+    background-color: #243762;
+    color: white;
+}
+
+.nav-item button.cust-logout {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 118px;
+    height: 30px;
+    background: #243762;
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+#cust-booking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cust-booking h2 {
+    margin: 0;
+}
+
+#cust-booking-form {
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cust-booking-form .booking-input {
+    display: flex;
+}
+
+#cust-booking-form .booking-input .location {
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+#cust-booking-form .booking-input .zipcode {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+#cust-booking-form .booking-input .location input {
+    width: 100%;
+}
+
+.booking-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 55px;
+    background: #ef1f4d;
+    border-radius: 6px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cust-booking-form a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/* Driver List */
+#cust-driver-list {
+    display: flex;
+    flex-direction: column;
+}
+
+#cust-driver-list h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.driver-list {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.driver {
+    display: flex;
+}
+.driver-list img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.driver-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.driver-info p:nth-child(1) {
+    font-size: 1.2rem;
+}
+.driver-info p:nth-child(2) {
+    font-weight: unset;
+}
+
+.driver-info-btns {
+    display: flex;
+}
+
+.driver-info-btns a {
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.driver-info-btns a:nth-child(1) {
+    background-color: #056de7;
+}
+
+.driver-info-btns a:nth-child(2) {
+    background-color: black;
+}
+
+.driver-list input.driver-book-btn {
+    background-color: #ef1f4d;
+    align-self: center;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    width: 118px;
+    height: 30px;
+    border-radius: 7px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: center;
+}
+
+#cust-driver-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+
+}
+
+.profile-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 1.5rem;
+    width: 169px;
+    width: 185px;
+    height: 178px;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 1.2rem;
+}
+
+.profile-pic a {
+    border-top: 1px solid black;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.border {
+    border: 1px solid black !important;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-details p {
+    color: #898989;
+    margin-bottom: 0.8rem;
+}
+
+.profile-details span {
+    color: black;
+}
+
+.vehicle {
+    padding: 0;
+}
+
+.vehicle-profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 1.5rem;
+    height: 40px;
+    width: 169px;
+}
+
+.vehicle-profile-pic a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#cust-confirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cust-confirm p {
+    font-size: 1.1rem;
+    font-family: "FontAwesome", "Arial";
+}
+
+#cust-confirm .driver-details {
+    margin-top: 3rem;
+}
+
+#cust-confirm #driver-profile {
+    display: flex;
+}
+
+#cust-confirm #driver-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+#cust-confirm #driver-profile #driver-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cust-confirm-btn {
+    margin-top: 5rem;
+    width: 367px;
+    height: 40.11px;
+    border: none;
+    color: white;
+    background: #ef1f4d;
+    border-radius: 6px;
+}
+
+#booking-status {
+    max-width: 600px;
+}
+
+.status {
+    display: flex;
+    min-height: 100px;
+}
+
+.status > p {
+    font-size: 1.2rem;
+    color: #9ba4b4;
+    margin: 0;
+}
+
+.status-details p {
+    color: #9ba4b4;
+}
+
+.status-details p.active,
+h2.active {
+    color: black !important;
+}
+
+.status-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status-line .circle {
+    height: 40px;
+    width: 30px;
+    background-color: #9ba4b4;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.status-line .line {
+    height: 100%;
+    width: 3px;
+    background-color: #9ba4b4;
+    margin-top: -1px;
+}
+
+.status-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.status-details button {
+    display: inline-block;
+    width: 120px;
+    font-size: 0.8rem;
+    border: none;
+    outline: none;
+    background-color: #2ec1ac;
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.status-details button.disabled {
+    background-color: #9ba4b4;
+    color: #f1f3f8;
+    cursor: unset;
+}
+
+.status-details p {
+    margin: 0;
+}
+.status-details h2 {
+    margin-top: -3px;
+    margin-bottom: 0;
+    color: #9ba4b4;
+    font-size: 1.6rem;
+}
+
+.status-line .circle.active {
+    background-color: #333;
+}
+
+.status-line .line.active {
+    height: 100%;
+    width: 0px;
+}
+
+/* #Driver */
+
+.driver-profile {
+    background-color: #C4C4C4;
+    width: 551px;
+    height: 281px;
+    padding: 1rem;
+}
+
+label{
+    border-top: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    color: black;
+    cursor: pointer;
+    font-size: 1rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.64);
+  }
+  
+  .detail {
+      display: flex;
+  }
+
+  
+  .detail .first{
+      font-size: 1rem;
+      font-weight: bold;
+      width: 180px;
+  }
+
+  .input-driver{
+      width: 370px;
+      border: none;
+      outline: none;
+      border-radius: 6px;
+      padding: 0.2rem;
+      font-weight: bold;
+      font-size: 18px;
+  }
+.driver-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.driver-click{
+    width: 232px;
+    margin-top: 2rem;
+    height: 47.62px;
+    background: #243762;
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none!important;
+}
+
+.driver-click:hover{
+    background-color: #C4C4C4;
+    color: black;
+}
+
+/* BookingLog */
+.viewLog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.viewLog span{
+    padding: 2rem;
+    width: 50%;
+}
+
+.cus-name{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 2rem;
+    width:100%;
+}

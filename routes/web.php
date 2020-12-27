@@ -56,7 +56,9 @@ Route::get('editform', 'App\Http\Controllers\vehicleController@editFormFunc' );
 
 Route::get('updtMaintenance', 'App\Http\Controllers\vehicleController@updateMaintenance' );
 
-Route::get('/driverRegister/driverRegistration', [driverController::class, 'addDriver']);
+// <==================== Driver ==========================================>
+Route::get('/driverRegister/driverRegistration', [driverController::class, 'createDriverForm']);
+Route::post('/driverRegister/driverRegistration', [driverController::class, 'addDriver']);
 Route::get('/driver/driverHomepage', [driverController::class, 'viewDriver']);
 Route::get('/driver/driverProfile', [driverController::class, 'viewDrivers']);
 Route::post('/driver/driverProfile', [driverController::class, 'updateDriver']);

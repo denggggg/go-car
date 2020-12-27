@@ -1,123 +1,74 @@
-<!-- 
-/*
- *	This content is generated from the PSD File Info.
- *	(Alt+Shift+Ctrl+I).
- *
- *	@desc 		
- *	@file 		driver_dashboard
- *	@date 		0
- *	@title 		Falah
- *	@author 	
- *	@keywords 	
- *	@generator 	Export Kit v1.3.figma
- *
-*/
- -->
- <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
-	<head>
-		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
-		<title>driver_dashboard</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="" >
-    <link rel="StyleSheet" href="{{ asset('css/driver/driver_dashboard.css') }}" />
-		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
-		<!-- Add your custom HEAD content here -->
+<!DOCTYPE html>
+<html lang="en">
 
-	</head>
-	<body>
-		<div id="content-container" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/f252491b10.js" crossorigin="anonymous"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/driver/driver_profile.css') }}">
+  <title>GoCar | Driver profile</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg nav-cust py-3">
+    <div class="container">
+      <div class="nav-title">
+        <a href="../../index.html">GoCar | Customer</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <button class="cust-logout">Log Out</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="cust-driver-profile" class="container">
+    <h2 class="py-4">My Profile</h2>
+    <form method="POST" action="">
+      @csrf
+    <div class="profile ">
+      <div class="profile-pic border" >
+        <img src="{{ asset('img/driver.png') }}" alt="driver-profile">
+        <!--a href="http://127.0.0.1:8000/customer/drivers" class="w-100 py-2">
+          <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+          Back
+		</a-->
+		<input type="file" id="upload" hidden/>
+		<label for="upload">Upload...</label>
 
 
-			<div id="page_driver_profile_ek1"  >
-				<div id="_bg__driver_profile_ek2"  ></div>
-				<div id="rectangle_1_ek3"  ></div>
-				<div id="gocar___driver_ek3" >
-					GoCar | Driver
-				</div>
+	  </div>
+      <div class="driver-profile">
 
-				<div id="group_1_ek1"  >
-					<div id="rectangle_2_ek3"  ></div>
-					<div id="log_out_ek3" >
-						Log Out
-					</div>
+		<div class="detail"><span class="first">Name:</span> <span></span></div>
+		<div class="detail mt-2"><span class="first">E-mail:</span><span><input type="text" class="input-driver"></span></div>
+		<div class="detail mt-2"><span class="first">Password:</span><span><input type="text" class="input-driver"></span></div>
+		<div class="detail mt-2"><span class="first">Phone Number:</span><span><input type="text" class="input-driver"></span></div>
+		<div class="detail mt-2"><span class="first">License expiry date:</span><span><input type="text" class="input-driver"></span></div>
+		<div class="detail mt-2"><span class="first">Address:</span><span><textarea class="input-driver"></textarea></span></div>
+		
+		<div class="driver-button"><a href="http://127.0.0.1:8000/driver/driverHomepage" class="driver-click mr-3">Cancel</a> <input type="submit" value="Update Profile" class="driver-click"></div>
+    </div>
+</form>
+	</div>
+	
 
-				</div>
-				<div id="my_profile" >
-					My Profile
-				</div>
+  </section>
 
-				<div id="group_12"  >
-					<div id="rectangle_17_ek1"  ></div>
-					<div id="rectangle_18_ek1"  ></div>
-					<div id="upload___" >
-						Upload...
-					</div>
-					<img src="{{ asset('img/skins/ellipse_3.png') }}" id="ellipse_3"/>
 
-				</div>
-				<img src="{{ asset('img/skins/rectangle_21.png') }}" id="rectangle_21"/>
-				<img src="{{ asset('img/skins/rectangle_24.png') }}" id="rectangle_24"/>
-				<img src="{{ asset('img/skins/rectangle_26.png') }}" id="rectangle_26"/>
-				<div id="_09_10_2023_ek1" >
-					09/10/2023
-				</div>
-				<div id="universiti_malaysia_pahang__26600_pekan__pahang_ek1" >
-					Universiti Malaysia Pahang, 26600 Pekan, Pahang
-				</div>
-				<img src="{{ asset('img/skins/rectangle_23.png') }}" id="rectangle_23" />
-				<div id="_0196448184_ek1" >
-					0196448184
-				</div>
-				<img src="{{ asset('img/skins/rectangle_22.png') }}" id="rectangle_22" />
-				<img src="{{ asset('img/skins/rectangle_25.png') }}" id="rectangle_25" />
-				<div id="alif_masdo_gmail_com_ek1" >
-					<span style="font-style:normal; text-decoration:NONE; ">Alif_Masdo</span><span style="font-style:normal; text-decoration:UNDERLINE; ">@gmail.co</span>
-				</div>
-				<div id="masdo2020_ek1" >
-					Masdo2020
-				</div>
-				<div id="alif_iskandar_bin_azura_ek1" >
-					Alif Iskandar bin Azura
-				</div>
-				<div id="phone_number__ek1" >
-					Phone Number:
-				</div>
-				<div id="name_" >
-					Name:
-				</div>
-				<div id="e_mail_" >
-					E-mail:
-				</div>
-				<div id="password__ek1" >
-					Password:
-				</div>
-				<div id="license_expiry_date_" >
-					License expiry date: 
-				</div>
-				<div id="address_" >
-					Address:
-				</div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 
-				<div id="group_14"  >
-					<div id="group_8_ek3"  >
-						<div id="group_11_ek1"  >
-							<div id="rectangle_11_ek1"  ></div>
-							<div id="update_profile" >
-								Update Profile
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="group_13"  >
-					<div id="group_11_ek2"  >
-						<div id="rectangle_11_ek2"  ></div>
-						<div id="cancel" >
-							Cancel
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
 </html>

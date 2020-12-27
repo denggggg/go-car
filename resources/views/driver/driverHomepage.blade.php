@@ -34,12 +34,13 @@
     <h2>Welcome Alif Iskandar bin Azura!</h2>
     <div id="driver-dashboard">
         <div class="dashboard">
-            <input type="button" class="button row" value="View Profile">
-            <input type="button" class="button row"value="Manage Vehicle">
+            <a class="link row" href="http://127.0.0.1:8000/driver/driverProfile">View Profile</a>
+            <!--input type="button" class="button row"value="Manage Vehicle"-->
+            <a class="link row" href="http://127.0.0.1:8000/driver/">Manage Vehicle</a>
         </div>
         <div class="dashboard">
-            <input type="button" class="button " value="Booking Log">
-            <input type="button" class="button "value="Manage Booking">
+            <a class="link row" href="http://127.0.0.1:8000/driver/driverBookingLog">Booking Log</a>
+            <a class="link row" href="http://127.0.0.1:8000/driver/driverBookingLog">Manage Booking</a>
         </div>
     </div>
 </section>
