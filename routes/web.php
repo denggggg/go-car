@@ -53,11 +53,13 @@ Route::get('vehicleEdit', 'App\Http\Controllers\vehicleController@editVehicle' )
 
 Route::get('vehicleMaintenance', 'App\Http\Controllers\vehicleController@maintenanceVehicle' );
 
-Route::get('vehicleEditForm', 'App\Http\Controllers\vehicleController@editFormFunc' );
+Route::get('vehicleEditForm', 'App\Http\Controllers\vehicleController@viewVehicle' );//...
 
 Route::get('updateMaintenance', 'App\Http\Controllers\vehicleController@updateMaintenance' );
 
 Route::post('submit', 'App\Http\Controllers\vehicleController@addVehicle');//post from form to controller
+
+Route::get('viewVehicle', 'App\Http\Controllers\vehicleController@viewVehicle' );//...
 
 // <==================== Driver ==========================================>
 Route::get('/driverRegister/driverRegistration', [driverController::class, 'createDriverForm']);
