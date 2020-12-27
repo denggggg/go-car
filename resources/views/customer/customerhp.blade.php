@@ -1,81 +1,51 @@
 
  <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+<html lang="en" >
 	<head>
-		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+ 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  		<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+  		<link rel="stylesheet" type="text/css" href="{{ asset('css/customer/customerhp.css') }}">
 		<title>Customer | Homepage</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="" >
-		<link rel="StyleSheet" href="{{ asset('/css/customer_registration.css') }}" />
-		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
-	
-
 	</head>
-	<body>
-		<div id="content-container" >
-			<div id="page_customer_dashboard_ek1"  >
-				<div id="_bg__customer_dashboard_ek2"  ></div>
-				<div id="rectangle_1_ek4"  ></div>
-				<div id="gocar___customer_ek3" >
-					GoCar | Customer
-				</div>
-				<div id="welcome_ali_bin_abu_" >
-					Welcome Ali bin Abu!
-				</div>
 
-				<div id="group_8"  >
+	
+<body>
+  <nav class="navbar navbar-expand-lg nav-cust py-3">
+    <div class="container">
+      <div class="nav-title">
+        <a href="../../index.html">GoCar | Customer</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-					<div id="group_8_ek1"  >
-						<div id="rectangle_3"  ></div>
-						<div id="view_profile" >
-							View Profile
-						</div>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <button class="cust-logout">Log Out</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-					</div>
+  <section id="customer-homepage" class="container">
+    <h2>Welcome Ali bin Abu!</h2>
+    <div id="customer-dashboard">
+        <div class="dashboard">
+            <input type="button" class="button row" value="View Profile">
+            <input type="button" class="button row" value="Manage Booking">
+			<input type="button" class="button row" value="View Booking History">
+        </div>
+    </div>
+  </section>
 
-				</div>
 
-				<div id="group_9_ek2"  >
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 
-					<div id="group_9_ek3"  >
-
-						<div id="group_15"  >
-							<div id="rectangle_3_ek1"  ></div>
-							<div id="view_booking_history" >
-								View Booking History
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div id="group_16"  >
-
-					<div id="group_9_ek4"  >
-
-						<div id="group_15_ek1"  >
-							<div id="rectangle_3_ek2"  ></div>
-							<div id="manage_booking" >
-								Manage<br/>Booking
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div id="group_1"  >
-					<div id="rectangle_2_ek3"  ></div>
-					<div id="log_out_ek3" >
-						Log Out
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-	</body>
 </html>

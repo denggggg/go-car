@@ -1,97 +1,69 @@
 
  <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+<html lang="en" >
 	<head>
-		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<meta charset="utf-8" />
 		<title>Customer | Profile</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="" >
-		<link rel="StyleSheet" href="{{ asset('/css/customer_registration.css') }}" />
-		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
+		<script src="https://kit.fontawesome.com/f252491b10.js" crossorigin="anonymous"></script>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+ 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/customer/customerprofile.css') }}">
+        <title>GoCar | Customer Profile</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg nav-cust py-3">
+    <div class="container">
+      <div class="nav-title">
+        <a href="../../index.html">GoCar | Customer</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <button class="cust-logout">Log Out</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="cust-driver-profile" class="container">
+    <h2 class="py-4">My Profile</h2>
+
+    <div class="profile ">
+      <div class="profile-pic border" >
+        <img src="{{ asset('img/custimg/ellipse_3.png') }}" alt="customer-pic">
+        <!--a href="http://127.0.0.1:8000/customer/drivers" class="w-100 py-2">
+          <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+          Back
+		</a-->
+		<input type="file" id="upload" hidden/>
+		<label for="upload">Upload</label>
+
+
+	  </div>
+      <div class="customer-profile">
+
+		<div class="detail"><span class="first">Name:</span> <span></span><b>{{$data['custName']}}​​</b></div>
+		<div class="detail mt-2"><span class="first">E-mail:</span><span><input type="text" placeholder="{{$data['custEmail']}}"class="input-customer"></span></div>
+		<div class="detail mt-2"><span class="first">Password:</span><span><input type="text" placeholder="{{$data['custPwd']}}"class="input-customer"></span></div>
+		<div class="detail mt-2"><span class="first">Phone Number:</span><span><input type="text" placeholder="{{$data['custPhoneNum']}}"class="input-customer"></span></div>
+		<div class="detail mt-2"><span class="first">Address Line:</span><span><textarea placeholder="{{$data['custAdress']}}" class="input-customer"></textarea></span></div>
 		
+		<div class="customer-button"><a href="http://127.0.0.1:8000/customer/customerhp" class="customer-click mr-3">Cancel</a> <input type="submit" value="Update Profile" class="customer-click"></div>
+	  </div>
+	</div>
+  </section>
 
-	</head>
-	<body>
-		<div id="content-container" >
 
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 
-			<div id="page_customer_profile_interface__ek1"  >
-				<div id="_bg__customer_profile_interface__ek2"  ></div>
-				<div id="rectangle_1_ek2"  ></div>
-				<div id="gocar___customer_ek1" >
-					GoCar | Customer
-				</div>
-
-				<div id="group_12"  >
-					<div id="rectangle_17"  ></div>
-					<div id="rectangle_18"  ></div>
-					<div id="upload" >
-						Upload
-					</div>
-					<img src="img/custimg/ellipse_3.png" id="ellipse_3" />
-
-				</div>
-				<div id="rectangle_21"  ></div>
-				<div id="ali_bin_abu_ek1" >
-					Ali bin Abu
-				</div>
-				<img src="img/custimg/rectangle_25.png" id="rectangle_25" />
-				<img src="img/custimg/rectangle_26.png" id="rectangle_26" />
-
-				<div id="group_9"  >
-					<div id="rectangle_11_ek1"  ></div>
-					<div id="update_profile" >
-						Update Profile 
-					</div>
-
-				</div>
-
-				<div id="group_13_ek1"  >
-					<div id="rectangle_11_ek2"  ></div>
-					<div id="cancel" >
-						Cancel
-					</div>
-
-				</div>
-				<div id="phone_number__ek1" >
-					Phone Number:
-				</div>
-				<div id="password__ek1" >
-					Password:
-				</div>
-				<div id="address_line__ek1" >
-					Address Line:
-				</div>
-				<div id="full_name___ek1" >
-					Full Name :
-				</div>
-				<div id="email__ek1" >
-					Email:
-				</div>
-				<div id="ali_gmail_com_ek1" >
-					<a href="mailto:Ali@gmail.com" target="_blank">Ali@gmail.com</a>
-				</div>
-				<div id="sukagrabcar123_ek1" >
-					sukagrabcar123
-				</div>
-				<div id="_01122334455_ek1" >
-					01122334455
-				</div>
-				<div id="no_15__jalan_ampang_jaya__43300__kuala_lumpur_ek1" >
-					No 15, Jalan Ampang Jaya, 43300,<br/>Kuala Lumpur
-				</div>
-				<div id="my_profile" >
-					My Profile
-				</div>
-
-				<div id="group_17_ek1"  >
-					<div id="rectangle_2_ek1"  ></div>
-					<div id="log_out_ek1" >
-						Log Out
-					</div>
-
-				
-		
-		</div>
-	</body>
 </html>
