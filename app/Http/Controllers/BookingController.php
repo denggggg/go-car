@@ -92,6 +92,7 @@ class bookingController extends Controller
     // url /customer/booking/{id}/status
     public function getBookingStatus($id)
     {
+        $data = bookingModel::find($id);
         return view('booking/custViewBookStatus')->with('data', $data);
     }
 
