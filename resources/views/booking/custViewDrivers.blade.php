@@ -43,8 +43,8 @@
           <p>John Maximus Wayne</p>
           <p class="py-1">Proton X90 2016</p>
           <div class="driver-info-btns">
-            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/'.$id.'/driver/1')}}">View Driver</a>
-            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/'.$id.'/vehicle/1')}}">View Driver</a>
+            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/driver/1')}}">View Driver</a>
+            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/vehicle/1')}}">View Driver</a>
           </div>
         </div>
       </div>
@@ -62,8 +62,8 @@
           <p>John Maximus Wayne</p>
           <p class="py-1">Proton X90 2016</p>
           <div class="driver-info-btns">
-            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/'.$id.'/driver/2')}}">View Driver</a>
-            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/'.$id.'/vehicle/2')}}">View Driver</a>
+            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/driver/2')}}">View Driver</a>
+            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/driver/2')}}">View Driver</a>
           </div>
         </div>
       </div>

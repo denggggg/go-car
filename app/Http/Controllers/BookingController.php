@@ -49,60 +49,63 @@ class bookingController extends Controller
          $book->save();
 
          $_SESSION['booking'] = $book; 
-        return redirect('/customer/booking/'.$book->id.'/drivers');
+        return redirect('/customer/booking/drivers');
     }
 
     // GET method
     // url /customer/booking/{id}/drivers
-    public function getDrivers($id)
+    public function getDrivers()
     {
-        return view('booking/custViewDrivers')->with('id',$id);
+        return view('booking/custViewDrivers');
     }
 
     // POST method
     // url /customer/booking/{id}/drivers
-    public function addDrivers(Request $request, $id)
+    public function addDrivers(Request $request)
     {
-        bookingModel::where('id', $id)->update(['driverID'=> request('driverID')]);
-        return redirect('/customer/booking/'.$id.'/confirm');
-        
+        session_start();
+        bookingModel::where('id', $_SESSION['booking']->id)->update(['driverID'=> request('driverID')]);
+        return redirect('/customer/booking/confirm');
     }
 
     // GET method
     // url /customer/booking/{id}/driver/{driverID}
-    public function getDriverByID($id)
+    public function getDriverByID()
     {
-        return view('booking/custViewDriver')->with('id', $id);
+        return view('booking/custViewDriver');
     }
 
     // GET method
     // url /customer/booking/{id}/vehicle/{vehID}
-    public function getVehicleByID($id)
+    public function getVehicleByID()
     {
-        return view('booking/custViewVehicle')->with('id', $id);
+        return view('booking/custViewVehicle');
     }
     
     // GET method
-    // url /customer/booking/{id}/confirm
-    public function getBookingDetails($id)
+    // url /customer/booking/confirm
+    public function getBookingDetails()
     {
-        $data = bookingModel::find($id);
+        session_start();
+        $data = bookingModel::find($_SESSION['booking']->id);
         return view('booking/custConfirmBook')->with('data', $data);
     }
 
     // POST method
     // url /customer/booking/{id}/confirm
-    public function confirmBookingByID($id)
+    public function confirmBookingByID()
     {
-        bookingModel::where('id', $id)->update(['bookStatus'=> "CONFIRMED"]);
-        return redirect('/customer/booking/'.$id.'/status');
+        session_start();
+        bookingModel::where('id', $_SESSION['booking']->id)->update(['bookStatus'=> "CONFIRMED"]);
+        return redirect('/customer/booking/status');
     }
 
     // GET method
     // url /customer/booking/{id}/status
-    public function getBookingStatus($id)
+    public function getBookingStatus()
     {
-        $data = bookingModel::find($id);
+        session_start();
+        $data = bookingModel::find($_SESSION['booking']->id);
         return view('booking/custViewBookStatus')->with('data', $data);
     }
 
@@ -110,7 +113,7 @@ class bookingController extends Controller
     // url /driver/booking
     public function getDriverPendingBookingsByID() 
     {
-        $data = bookingModel::where('driverID', 1)->where('bookStatus', "CREATED")->get();
+        $data = bookingModel::where('driverID', 2)->where('bookStatus', "CONFIRMED")->get();
 
         return view('booking/driverViewBook')->with('data', $data);
     }
@@ -134,7 +137,7 @@ class bookingController extends Controller
     // url /driver/booking/{id}
     public function getDriverAssignedBookingsByID($id) 
     {
-        $data = bookingModel::where('driverID', 1)->where('id', $id)->get();
+        $data = bookingModel::where('driverID', 2)->where('id', $id)->get();
         return view('booking/driverUpdateBook')->with('data', $data);
     }
 
@@ -156,9 +159,6 @@ class bookingController extends Controller
             bookingModel::where('id', $id)->update(['bookStatus'=> "CANCELLED"]);
             return redirect('/driver/booking/');
         }
-
-        
-        
     }
 
 }
