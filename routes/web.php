@@ -20,6 +20,22 @@ Route::get('/', function () {
     return view('main-page');
 });
 
+Route::get('/login', function () {
+    return view('login-main');
+});
+
+Route::get('/register', function () {
+    return view('register-main');
+});
+
+Route::get('/login/customer', [customerController::class, 'createCustomerLoginForm']); 
+Route::post('/login/customer', [customerController::class, 'loginCustomer']); 
+   
+
+Route::get('/login/driver', function () {
+    return view('login-driver');
+});
+
 // <==================== Booking ==========================================>
 
 Route::get('/customer/booking', [BookingController::class, 'createBookingForm']);
@@ -78,9 +94,9 @@ Route::get('customer/profile/{id}', [customerController::class, 'customerprofile
 //     return view('customer/customerRegistration');
 // });
 
-// Route::get('/customer/homepage', function () {
-//     return view('customer/customerhp');
-// });
+Route::get('/customer/homepage', function () {
+    return view('customer/customerhp');
+});
 
 // Route::get('/customerlogin', function () {
 //     return view('customer/customerLogin');
