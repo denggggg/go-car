@@ -13,13 +13,24 @@ class bookingController extends Controller
     // url /customer/booking
     public function createBookingForm()
     {
-        return view('booking/custAddBook');
+        session_start();
+        if(count($_SESSION))
+        {
+            $customer = $_SESSION['customer'];
+            return view('booking/custAddBook');
+        }
+        else {
+            return redirect('/login');
+        }
+        
     }
 
     // POST method
     // url /customer/booking
     public function addBookingByID(Request $request)
     {
+        session_start();
+        $customer = $_SESSION['customer']; 
         // Form validation
         $this->validate($request, [
             'pickup' => 'required',
@@ -33,12 +44,11 @@ class bookingController extends Controller
          $book->custPickUpLoc = request('pickup-zip') . " " . request('pickup');
          $book->custDropLoc = request('dropoff-zip') . " " . request('dropoff');
          $book->bookStatus = "CREATED";
-         $book->custID = 1;
+         $book->custID = $customer[0]->id;
          $book->driverID = 0;
          $book->save();
-        
-        //  DB::insert('insert into booking (custPickUpLoc, custDropLoc, bookStatus, custID, driverID) values (?, ?, ?, ?, ?)', [request('pickup-zip') . " " . request('pickup'), request('dropoff-zip') . " " . request('dropoff'), 'CREATED', '1', '0']);
-        //  return view('booking/custViewDrivers');
+
+         $_SESSION['booking'] = $book; 
         return redirect('/customer/booking/'.$book->id.'/drivers');
     }
 
@@ -92,6 +102,7 @@ class bookingController extends Controller
     // url /customer/booking/{id}/status
     public function getBookingStatus($id)
     {
+        $data = bookingModel::find($id);
         return view('booking/custViewBookStatus')->with('data', $data);
     }
 
