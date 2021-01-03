@@ -27,13 +27,14 @@ class driverController extends Controller
 
     public function viewDriver()
     {
+        
         return view('driver/driverHomepage');
     }
 
     public function viewDrivers($id)
     {
         $data = driverModel::find($id);
-        return view('driver/driverProfile')-> with ('data', $data);
+        return view('driver/driverProfile')-> with ('data', $data);;
     }
 
     public function updateDriver()
@@ -44,5 +45,23 @@ class driverController extends Controller
     public function viewBookingLog()
     {
         return view('driver/driverBookingLog');
+    }
+
+    public function createDriverLoginForm(){
+        return view('login-driver');
+    }
+
+    public function loginDriver(Request $request) {
+        $driver = driverModel::where('driverEmail', '=', $request['driver-email'])->where('driverPwd', '=', $request['driver-password'])->get();
+
+        if(!$driver->count()) {
+            return "error";
+        }
+
+        session_start();
+        $_SESSION['driver'] = $driver;
+
+        return redirect('/driver/driverHomepage');
+
     }
 }

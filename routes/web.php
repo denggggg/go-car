@@ -36,6 +36,9 @@ Route::get('/login/driver', function () {
     return view('login-driver');
 });
 
+Route::get('/login/driver', [driverController::class, 'createDriverLoginForm']); 
+Route::post('/login/driver', [driverController::class, 'loginDriver']); 
+
 // <==================== Booking ==========================================>
 
 Route::get('/customer/booking', [BookingController::class, 'createBookingForm']);
@@ -81,7 +84,7 @@ Route::get('viewVehicle', 'App\Http\Controllers\vehicleController@viewVehicle' )
 Route::get('/driverRegister/driverRegistration', [driverController::class, 'createDriverForm']);
 Route::post('/driverRegister/driverRegistration', [driverController::class, 'addDriver']);
 Route::get('/driver/driverHomepage', [driverController::class, 'viewDriver']);
-Route::get('/driver/driverProfile', [driverController::class, 'viewDrivers']);
+Route::get('/driver/driverProfile/{id}', [driverController::class, 'viewDrivers']);
 Route::post('/driver/driverProfile', [driverController::class, 'updateDriver']);
 Route::get('/driver/driverBookingLog', [driverController::class, 'viewBookingLog']);
 
