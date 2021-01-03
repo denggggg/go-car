@@ -28,9 +28,9 @@ Route::get('/register', function () {
     return view('register-main');
 });
 
-Route::get('/login/customer', function () {
-    return view('login-customer');
-});
+Route::get('/login/customer', [customerController::class, 'createCustomerLoginForm']); 
+Route::post('/login/customer', [customerController::class, 'loginCustomer']); 
+   
 
 Route::get('/login/driver', function () {
     return view('login-driver');
@@ -94,9 +94,9 @@ Route::get('customer/profile/{id}', [customerController::class, 'customerprofile
 //     return view('customer/customerRegistration');
 // });
 
-// Route::get('/customer/homepage', function () {
-//     return view('customer/customerhp');
-// });
+Route::get('/customer/homepage', function () {
+    return view('customer/customerhp');
+});
 
 // Route::get('/customerlogin', function () {
 //     return view('customer/customerLogin');

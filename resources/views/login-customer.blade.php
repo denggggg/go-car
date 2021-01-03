@@ -37,9 +37,12 @@
       <h2>Customer Login</h2>
     </div>
     <div id="login-customer-bottom">
+    <form  method="POST" action=''>
+        @csrf
       <input class="my-3" type="email" name="customer-email" id="" placeholder="example@gmail.com">
-      <input class="mb-3"type="password" name="customer-passwrod" placeholder="password">
+      <input class="mb-3" type="password" name="customer-password" placeholder="password">
       <input type="submit" value="Log In">
+    </form>
     </div>
   </section>
  

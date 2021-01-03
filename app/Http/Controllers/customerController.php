@@ -34,6 +34,24 @@ class customerController extends Controller
     // {
     //     return view('customer/customerRegistration');
     // }
+
+    public function createCustomerLoginForm(){
+        return view('login-customer');
+    }
+
+    public function loginCustomer(Request $request) {
+        $customer = customerModel::where('custEmail', '=', $request['customer-email'])->where('custPwd', '=', $request['customer-password'])->get();
+
+        if(!$customer->count()) {
+            return "error";
+        }
+
+        session_start();
+        $_SESSION['customer'] = $customer;
+
+        return redirect('/customer/homepage');
+
+    }
 }
 
 
