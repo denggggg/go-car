@@ -25,7 +25,10 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <button class="cust-logout">Log Out</button>
+          <form action="/logout" method="POST" >
+          @csrf
+            <input type="submit" value="Log Out" class="cust-logout" />
+          </form>
           </li>
         </ul>
       </div>
@@ -43,9 +46,9 @@
         </a>
       </div>
       <div class="profile-details">
-        <p class="details">Vehicle Model: <span>Proton X70 (Black)</span></p>
-        <p class="details">Plate Number: <span>VB123</span></p>
-        <p class="details">Roadtax Expirty: <span>20/10/2023</span></p>
+        <p class="details">Vehicle Model: <span>{{$data['vehicleModel']}} ({{$data['vehicleColour']}}) </span></p>
+        <p class="details">Plate Number: <span>{{$data['vehicleRegNo']}}</span></p>
+        <p class="details">Roadtax Expirty: <span>{{$data['vehicleRoadTax']}}</span></p>
       </div>
     </div>
 

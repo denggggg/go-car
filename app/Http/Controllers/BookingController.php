@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\bookingModel;
+use App\Models\driverModel;
+use App\Models\vehicleModel;
+
 use DB;
 
 class bookingController extends Controller
@@ -53,14 +56,16 @@ class bookingController extends Controller
     }
 
     // GET method
-    // url /customer/booking/{id}/drivers
+    // url /customer/booking/drivers
     public function getDrivers()
     {
-        return view('booking/custViewDrivers');
+        $data = driverModel::all();
+        $data2 = vehicleModel::all();
+        return view('booking/custViewDrivers', compact('data', 'data2'));
     }
 
     // POST method
-    // url /customer/booking/{id}/drivers
+    // url /customer/booking/drivers
     public function addDrivers(Request $request)
     {
         session_start();
@@ -69,17 +74,21 @@ class bookingController extends Controller
     }
 
     // GET method
-    // url /customer/booking/{id}/driver/{driverID}
-    public function getDriverByID()
+    // url /customer/booking/driver/{driverID}
+    public function getDriverByID($id)
     {
-        return view('booking/custViewDriver');
+       
+        $data = driverModel::find($id);
+       
+        return view('booking/custViewDriver')->with('data', $data);
     }
 
     // GET method
-    // url /customer/booking/{id}/vehicle/{vehID}
-    public function getVehicleByID()
+    // url /customer/booking/vehicle/{vehID}
+    public function getVehicleByID($id)
     {
-        return view('booking/custViewVehicle');
+        $data = vehicleModel::find($id);
+        return view('booking/custViewVehicle')->with('data', $data);
     }
     
     // GET method
@@ -88,11 +97,14 @@ class bookingController extends Controller
     {
         session_start();
         $data = bookingModel::find($_SESSION['booking']->id);
-        return view('booking/custConfirmBook')->with('data', $data);
+        $data2 = driverModel::find($data['driverID']);
+        $data3 = vehicleModel::where('driverID', $data['driverID'])->get();
+        return $data3;
+        return view('booking/custConfirmBook', compact('data', 'data2', 'data3'));
     }
 
     // POST method
-    // url /customer/booking/{id}/confirm
+    // url /customer/booking//confirm
     public function confirmBookingByID()
     {
         session_start();
@@ -106,6 +118,7 @@ class bookingController extends Controller
     {
         session_start();
         $data = bookingModel::find($_SESSION['booking']->id);
+        
         return view('booking/custViewBookStatus')->with('data', $data);
     }
 
