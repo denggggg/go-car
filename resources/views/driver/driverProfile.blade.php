@@ -16,7 +16,7 @@
   <nav class="navbar navbar-expand-lg nav-cust py-3">
     <div class="container">
       <div class="nav-title">
-        <a href="../../index.html">GoCar | Customer</a>
+        <a href="../../index.html">GoCar | Driver</a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,10 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <button class="cust-logout">Log Out</button>
+            <form action="/logout" method="POST" >
+          @csrf
+            <input type="submit" value="Log Out" class="cust-logout" />
+          </form>
           </li>
         </ul>
       </div>

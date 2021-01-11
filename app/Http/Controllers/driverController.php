@@ -36,7 +36,7 @@ class driverController extends Controller
         
 
 
-         return redirect('/driver/driverHomepage');
+         return redirect('/login');
     }
 
     public function viewDriver()
@@ -44,10 +44,13 @@ class driverController extends Controller
         return view('driver/driverHomepage');
     }
 
-    public function viewDrivers($id)
+    public function viewDrivers()
     {
-        $data = driverModel::find($id);
+        session_start();
+        //return $_SESSION['driver'][0]->id;
+        $data = driverModel::find($_SESSION['driver'][0]->id);
         return view('driver/driverProfile')-> with ('data', $data);
+
     }
 
     public function updateDriver(Request $request)

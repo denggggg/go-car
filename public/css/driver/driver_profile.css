@@ -28,7 +28,7 @@ a {
     color: white;
 }
 
-.nav-item button.cust-logout {
+.nav-item input.cust-logout {
     border: none;
     outline: none;
     cursor: pointer;
