@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/driver/driver_registration.css') }}">
-  <title>GoCar | Driver profile</title>
+  <title>GoCar | Driver Register</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
     <h2 class="py-4">Driver Registration</h2>
 
     <div class="register ">
-    <form method="POST" action="">
+    <form method="POST" action="" enctype="multipart/form-data">
       @csrf
       <div class="driver-register">
 		<div class="detail"><span class="first">Full Name:</span> <span><input type="text" name="Fname" class="input-driver"></span></div>

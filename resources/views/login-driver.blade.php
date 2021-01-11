@@ -39,8 +39,8 @@
     <div id="login-customer-bottom" class="driver">
       <form  method="POST" action="">
         @csrf
-        <input class="my-3" type="email" name="customer-email" id="" placeholder="example@gmail.com">
-        <input class="mb-3"type="password" name="customer-passwrod" placeholder="password">
+        <input class="my-3" type="email" name="driver-email" id="" placeholder="example@gmail.com">
+        <input class="mb-3"type="password" name="driver-password" placeholder="password">
         <input type="submit" value="Log In">
       </form>
     </div>

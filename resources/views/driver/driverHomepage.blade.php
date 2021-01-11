@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/driver/driver.css') }}">
-  <title>GoCar | Customer Booking | Driver List</title>
+  <title>GoCar | Driver Dashboard </title>
 </head>
 
 <body>
@@ -23,7 +23,10 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <button class="cust-logout">Log Out</button>
+          <form action="/logout" method="POST" >
+          @csrf
+            <input type="submit" value="Log Out" class="cust-logout" />
+          </form>
           </li>
         </ul>
       </div>
@@ -40,7 +43,7 @@
         </div>
         <div class="dashboard">
             <a class="link row" href="http://127.0.0.1:8000/driver/driverBookingLog">Booking Log</a>
-            <a class="link row" href="http://127.0.0.1:8000/driver/driverBookingLog">Manage Booking</a>
+            <a class="link row" href="http://127.0.0.1:8000/">Manage Booking</a>
         </div>
     </div>
 </section>
