@@ -3,16 +3,16 @@
    <head>
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
       <link href="{{ asset('/css/vehicle.css') }}" rel="stylesheet" />
-      <title>Document</title>
+      <title>Edit Vehicle</title>
    </head>
    <body>
       <div class="v41_2">
          <div class="v41_3"></div>
          <a href="http://127.0.0.1:8000/vehicleEdit">
          <span class="v41_4">GoCar | Driver</span>
+         </a>
          <div class="v41_5">
-            <div class="v41_6"></div>
-            <span class="v41_7">Log Out</span>
+            
          </div>
 
          
