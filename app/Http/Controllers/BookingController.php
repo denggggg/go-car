@@ -99,7 +99,6 @@ class bookingController extends Controller
         $data = bookingModel::find($_SESSION['booking']->id);
         $data2 = driverModel::find($data['driverID']);
         $data3 = vehicleModel::where('driverID', $data['driverID'])->get();
-        return $data3;
         return view('booking/custConfirmBook', compact('data', 'data2', 'data3'));
     }
 

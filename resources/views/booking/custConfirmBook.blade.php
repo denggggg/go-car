@@ -49,7 +49,7 @@
       <div id="driver-details">
         <p>Driver Name : {{$data2['driverName']}} </p>
         <p>Telephone Number: {{$data2['driverPhone']}}  </p>
-        <p>Vehicle : Protion X90 2014 </p>
+        <p>Vehicle : {{$data3[0]['vehicleModel']}} {{$data3[0]['vehicleManYear']}} </p>
       </div>
     </div>
 
