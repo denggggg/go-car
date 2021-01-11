@@ -13,7 +13,7 @@
          </a>
          <div class="v17_67">
             <div class="v17_68"></div>
-            <span class="v17_69">Log Out</span>
+            
          </div>
 
          
@@ -32,13 +32,13 @@
          <span class="v17_73">Roadtax Expiry:</span>
          <!-- Input field -->
          <!-- brand -->
-         <input class="v17_79" name= "brand" type="text" placeholder="Car brand"></input>
+         <input class="v17_79" name= "brand" type="text" placeholder="Car brand" required></input>
          <!-- platenumber -->
-         <input class="v17_80" name= "plateNum" type="text" placeholder="Plate Number"></input>
+         <input class="v17_80" name= "plateNum" type="text" placeholder="Plate Number" required></input>
          <!-- engineCC -->
-         <input class="v17_78" name= "engineCC" type="text" placeholder="0.0"></input>
+         <input class="v17_78" name= "engineCC" type="text" placeholder="0.0" required></input>
          <!-- manuyear -->
-         <select class="v17_117" name= "manufacturingYear">
+         <select class="v17_117" name= "manufacturingYear" required>
          <option value="2020">2020</option>
          <option value="2019">2019</option>
          <option value="2018">2018</option>
@@ -67,9 +67,9 @@
          <option value="1995">1995</option>
          </select>
           <!-- colour -->
-          <input class="v17_77" name= "colour" type="text" placeholder="Car colour"></input>
+          <input class="v17_77" name= "colour" type="text" placeholder="Car colour" required></input>
          <!-- roadtax -->
-         <input class="v17_75" name= "roadtax" type="date" placeholder="Roadtax expired date"></input>
+         <input class="v17_75" name= "roadtax" type="date" placeholder="Roadtax expired date" required></input>
          
          <!-- button -->
          <input type="submit" value="ADD VEHICLE" class="v17_81">

@@ -11,11 +11,11 @@
          <span class="v17_258">GoCar | Driver</span>
          <div class="v17_259">
             <div class="v17_260"></div>
-            <span class="v17_261">Log Out</span>
+            
          </div>
          <div class="v17_262">
             <div class="v17_263"></div>
-            <a href="http://127.0.0.1:8000/updateMaintenance">
+            <a href="http://127.0.0.1:8000/viewMaintenance/1">
             <span class="v17_264">Update maintenance record</span>
             </a>
          </div>

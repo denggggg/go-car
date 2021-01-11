@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\bookingController;
 use App\Http\Controllers\driverController;
 use App\Http\Controllers\customerController;
+use App\Http\Controllers\vehicleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,21 +46,31 @@ Route::post('/driver/booking/{id}', [BookingController::class, 'driverUpdateAssi
 
 // <==================== Vehicle ==========================================>
 
-Route::get('vehicleMenu', 'App\Http\Controllers\vehicleController@menuVehicle' );//@functionName
+Route::get('vehicleMenu', [vehicleController::class, 'menuVehicle']);//@functionName
 
-Route::get('vehicleAdd', 'App\Http\Controllers\vehicleController@gotoaddvehicle' );
+Route::get('vehicleAdd', [vehicleController::class, 'gotoaddvehicle']);
 
-Route::get('vehicleEdit', 'App\Http\Controllers\vehicleController@editVehicle' );
+Route::get('vehicleEdit', [vehicleController::class, 'editVehicle']);
 
-Route::get('vehicleMaintenance', 'App\Http\Controllers\vehicleController@maintenanceVehicle' );
+Route::get('vehicleMaintenance', [vehicleController::class, 'maintenanceVehicle']);
 
-Route::get('vehicleEditForm', 'App\Http\Controllers\vehicleController@viewVehicle' );//...
+Route::get('viewVehicle/{id}', [vehicleController::class, 'viewVehicle']);//...
 
-Route::get('updateMaintenance', 'App\Http\Controllers\vehicleController@updateMaintenance' );
+Route::get('editForm/{id}', [vehicleController::class, 'editData']);
 
-Route::post('submit', 'App\Http\Controllers\vehicleController@addVehicle');//post from form to controller
+Route::get('viewMaintenance/{id}', [vehicleController::class, 'viewMaintenance']);
 
-Route::get('viewVehicle', 'App\Http\Controllers\vehicleController@viewVehicle' );//...
+Route::get('editFormMaintenance/{id}', [vehicleController::class, 'editFormMaintenance']);
+
+Route::post('submit', [vehicleController::class, 'addVehicle']);//post from form to controller
+
+Route::post('saveMaintenance', [vehicleController::class, 'saveMaintenance']);//save maintenance record
+
+Route::post('edit', 'App\Http\Controllers\vehicleController@updateData');//save edited vehicle info
+
+Route::post('saveEditMaintenance', 'App\Http\Controllers\vehicleController@saveEditMaintenance');//save edited maintenance
+
+//Route::get('viewVehicle', 'App\Http\Controllers\vehicleController@viewVehicle' );//...
 
 // <==================== Driver ==========================================>
 Route::get('/driverRegister/driverRegistration', [driverController::class, 'createDriverForm']);

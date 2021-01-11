@@ -8,16 +8,16 @@
    <body>
       <div class="v17_213">
          <div class="v17_214"></div>
-         <a href="http://127.0.0.1:8000/vehiclemenu">
+         <a href="http://127.0.0.1:8000/vehicleMenu">
          <span class="v17_215">GoCar | Driver</span>
          </a>
          <div class="v17_216">
             <div class="v17_217"></div>
-            <span class="v17_218">Log Out</span>
+            
          </div>
          <div class="v17_219">
             <div class="v17_220"></div>
-            <a href="http://127.0.0.1:8000/vehicleEditForm">
+            <a href="http://127.0.0.1:8000/viewVehicle/1"><!-- chg -->
             <span class="v17_221"> Edit Information</span>
          </div>
          </a>
