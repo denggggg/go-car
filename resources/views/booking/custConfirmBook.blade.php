@@ -25,7 +25,10 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <button class="cust-logout">Log Out</button>
+          <form action="/logout" method="POST" >
+          @csrf
+            <input type="submit" value="Log Out" class="cust-logout" />
+          </form>
           </li>
         </ul>
       </div>
@@ -44,8 +47,8 @@
     <div id="driver-profile">
       <img src="{{ asset('img/driver.png') }}" alt="driver-profile">
       <div id="driver-details">
-        <p>Driver Name : Alif bin  Azura </p>
-        <p>Telephone Number: 0191234123  </p>
+        <p>Driver Name : {{$data2['driverName']}} </p>
+        <p>Telephone Number: {{$data2['driverPhone']}}  </p>
         <p>Vehicle : Protion X90 2014 </p>
       </div>
     </div>

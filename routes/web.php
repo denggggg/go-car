@@ -28,6 +28,12 @@ Route::get('/register', function () {
     return view('register-main');
 });
 
+Route::post('/logout', function () {
+    session_start();
+    session_destroy();
+    return redirect('/');
+});
+
 Route::get('/login/customer', [customerController::class, 'createCustomerLoginForm']); 
 Route::post('/login/customer', [customerController::class, 'loginCustomer']); 
    

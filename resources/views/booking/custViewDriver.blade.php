@@ -25,7 +25,10 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <button class="cust-logout">Log Out</button>
+          <form action="/logout" method="POST" >
+          @csrf
+            <input type="submit" value="Log Out" class="cust-logout" />
+          </form>
           </li>
         </ul>
       </div>
@@ -44,9 +47,9 @@
         </a>
       </div>
       <div class="profile-details">
-        <p class="details">Full Name: <span>Alif Iskandar bin Azura</span></p>
-        <p class="details">Telephone Number: <span>0191234123</span></p>
-        <p class="details">License Expiry Date: <span>09/10/23</span></p>
+        <p class="details">Full Name: <span>{{$data['driverName']}}</span></p>
+        <p class="details">Telephone Number: <span>{{$data['driverPhone']}}</span></p>
+        <p class="details">License Expiry Date: <span>{{$data['driverLicense']}}</span></p>
       </div>
     </div>
 

@@ -23,7 +23,10 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <button class="cust-logout">Log Out</button>
+          <form action="/logout" method="POST" >
+          @csrf
+            <input type="submit" value="Log Out" class="cust-logout" />
+          </form>
           </li>
         </ul>
       </div>
@@ -35,40 +38,37 @@
     
     <form action="" method="POST" >
     @csrf
-    <div class="driver-list py-3">
-      
-      <div class="driver">
-        <img src="{{ asset('img/driver.png') }}" alt="driver image" class="mr-3" />
-        <div class="driver-info">
-          <p>John Maximus Wayne</p>
-          <p class="py-1">Proton X90 2016</p>
-          <div class="driver-info-btns">
-            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/driver/1')}}">View Driver</a>
-            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/vehicle/1')}}">View Driver</a>
+    @foreach ($data as $d)
+
+      <div class="driver-list py-3">
+        
+        <div class="driver">
+          <img src="{{ asset('img/driver.png') }}" alt="driver image" class="mr-3" />
+          <div class="driver-info">
+            <p>{{$d['driverName']}}</p>
+            @foreach ($data2 as $d2)
+              @if ($d2['driverID'] == $d['id'])
+              <p class="py-1">{{$d2['vehicleModel']}}</p>
+              @break
+              @endif
+            @endforeach
+            <div class="driver-info-btns">
+              <a class="py-1 px-3 mr-3" href="<?php echo url('/customer/booking/driver/') . "/" . $d['id']?>">View Driver</a>
+              @foreach ($data2 as $d2)
+              @if ($d2['driverID'] == $d['id'])
+              <a class="py-1 px-3 mr-3" href="<?php echo url('/customer/booking/vehicle/') . "/" . $d2['id']?> ">View Vehicle</a>
+              @break
+              @endif
+            @endforeach
+              
+            </div>
           </div>
         </div>
-      </div>
-      <input type="hidden" value="1" name="driverID" />
-      <input type="submit" value="Book" class="driver-book-btn" />
-    </form>
-    </div>
-    <form action="" method="POST" >
-    @csrf
-    <div class="driver-list py-3">
+        <input type="hidden" value="{{$d['id']}}" name="driverID" />
+        <input type="submit" value="Book" class="driver-book-btn" />
       
-      <div class="driver">
-        <img src="{{ asset('img/driver.png') }}" alt="driver image" class="mr-3" />
-        <div class="driver-info">
-          <p>John Maximus Wayne</p>
-          <p class="py-1">Proton X90 2016</p>
-          <div class="driver-info-btns">
-            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/driver/2')}}">View Driver</a>
-            <a class="py-1 px-3 mr-3" href="{{url('/customer/booking/driver/2')}}">View Driver</a>
-          </div>
-        </div>
       </div>
-      <input type="hidden" value="2" name="driverID" />
-      <input type="submit" value="Book" class="driver-book-btn" />
+    @endforeach
     </form>
   </section>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
