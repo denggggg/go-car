@@ -327,6 +327,11 @@ h2.active {
     color: black !important;
 }
 
+.status-details p.reject,
+h2.reject {
+    color: #ef1f4d !important;
+}
+
 .status-line {
     display: flex;
     flex-direction: column;
@@ -390,4 +395,8 @@ h2.active {
 .status-line .line.active {
     height: 100%;
     width: 0px;
+}
+
+.status-line .circle.reject {
+    background-color: #ef1f4d;
 }

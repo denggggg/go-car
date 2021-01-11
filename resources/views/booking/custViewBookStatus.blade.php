@@ -79,6 +79,34 @@
         </div>
       </div>
       @endif
+
+      @if ($data->bookStatus=="REJECTED")
+      <div class="status">
+          <div class="status-line mx-3 ">
+            <div class="circle "></div>
+            <div class="line "></div>
+          </div>
+          <div class="status-details">
+            <h2>Order Created</h2>
+            <p>
+              Please wait for the driver to accept your request. 
+            </p>
+          </div>
+        </div>
+
+      <div class="status">
+        <div class="status-line mx-3">
+          <div class="circle reject"></div>
+          <div class="line active"></div>
+        </div>
+        <div class="status-details">
+          <h2 class="reject">Order Rejected</h2>
+          <p class="reject">
+            The driver has rejected your order. Please make another booking request.
+          </p>
+        </div>
+      </div>
+      @endif
       
       @if ($data->bookStatus=="PICKED UP")
       <div class="status">
@@ -116,6 +144,47 @@
           <h2 class="active">Picked Up</h2>
           <p class="active">
             The driver has picked you up at your location.
+          </p>
+        </div>
+      </div>
+      @endif
+
+      @if ($data->bookStatus=="CANCELLED")
+      <div class="status">
+          <div class="status-line mx-3 ">
+            <div class="circle "></div>
+            <div class="line "></div>
+          </div>
+          <div class="status-details">
+            <h2>Order Created</h2>
+            <p>
+              Please wait for the driver to accept your request. 
+            </p>
+          </div>
+        </div>
+
+      <div class="status">
+        <div class="status-line mx-3">
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+        <div class="status-details">
+          <h2>Order Accepted</h2>
+          <p>
+            Your driver is coming to your location.
+          </p>
+        </div>
+      </div>
+
+      <div class="status">
+        <div class="status-line mx-3">
+          <div class="circle reject"></div>
+          <div class="line active"></div>
+        </div>
+        <div class="status-details">
+          <h2 class="reject">Order Cancelled</h2>
+          <p class="reject">
+           The driver has cancelled your order. Please make another booking request.
           </p>
         </div>
       </div>

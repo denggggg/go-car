@@ -125,7 +125,8 @@ class bookingController extends Controller
     // url /driver/booking
     public function getDriverPendingBookingsByID() 
     {
-        $data = bookingModel::where('driverID', 2)->where('bookStatus', "CONFIRMED")->get();
+        session_start();
+        $data = bookingModel::where('driverID', $_SESSION['driver'][0]->id)->where('bookStatus', "CONFIRMED")->get();
 
         return view('booking/driverViewBook')->with('data', $data);
     }
@@ -149,7 +150,8 @@ class bookingController extends Controller
     // url /driver/booking/{id}
     public function getDriverAssignedBookingsByID($id) 
     {
-        $data = bookingModel::where('driverID', 2)->where('id', $id)->get();
+        session_start();
+        $data = bookingModel::where('driverID', $_SESSION['driver'][0]->id)->where('id', $id)->get();
         return view('booking/driverUpdateBook')->with('data', $data);
     }
 
