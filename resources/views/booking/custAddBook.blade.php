@@ -69,7 +69,7 @@
         <!-- Error -->
         @if ($errors->has('pickup') or $errors->has('pickup-zip') or $errors->has('dropoff') or $errors->has('dropoff-zip'))
         <div class="alert alert-danger py-2 px-3 mt-3">
-            <p class="text-center ">Please fill up the required input(s)</p>
+            <p class="text-center">Please fill up the required input(s)</p>
         </div>
         @endif
 

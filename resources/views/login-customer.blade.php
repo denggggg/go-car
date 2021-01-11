@@ -41,6 +41,15 @@
         @csrf
       <input class="my-3" type="email" name="customer-email" id="" placeholder="example@gmail.com">
       <input class="mb-3" type="password" name="customer-password" placeholder="password">
+
+
+      <!-- Error -->
+      @if ($error)
+        <div class="alert alert-danger py-2 px-3 mt-3">
+            <p class="text-center ">{{$error}}</p>
+        </div>
+        @endif
+
       <input type="submit" value="Log In">
     </form>
     </div>

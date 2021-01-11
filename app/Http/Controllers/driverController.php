@@ -77,14 +77,15 @@ class driverController extends Controller
     }
 
     public function createDriverLoginForm(){
-        return view('login-driver');
+        return view('login-driver')->with('error', "");;
     }
 
     public function loginDriver(Request $request) {
         $driver = driverModel::where('driverEmail', '=', $request['driver-email'])->where('driverPwd', '=', $request['driver-password'])->get();
 
         if(!$driver->count()) {
-            return "error";
+            $errorMsg = "Invalid credentials";
+            return view('login-driver')->with('error', $errorMsg);
         }
 
         session_start();

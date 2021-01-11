@@ -313,3 +313,7 @@ a {
 #login-customer-bottom.driver input[type="submit"] {
     background-color: #243762;
 }
+
+.alert p {
+    margin-bottom: 0;
+}

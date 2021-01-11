@@ -36,14 +36,15 @@ class customerController extends Controller
     // }
 
     public function createCustomerLoginForm(){
-        return view('login-customer');
+        return view('login-customer')->with('error', "");
     }
 
     public function loginCustomer(Request $request) {
         $customer = customerModel::where('custEmail', '=', $request['customer-email'])->where('custPwd', '=', $request['customer-password'])->get();
 
         if(!$customer->count()) {
-            return "error";
+            $errorMsg = "Invalid credentials";
+            return view('login-customer')->with('error', $errorMsg);
         }
 
         session_start();
