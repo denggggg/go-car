@@ -3,14 +3,14 @@
    <head>
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
       <link href="{{ asset('/css/vehicle.css') }}" rel="stylesheet" />
-      <title>Document</title>
+      <title>Update Maintenance</title>
    </head>
    <body>
       <div class="v17_298">
          <div class="v17_299"></div>
          <span class="v17_300">GoCar | Driver</span>
          <div class="v17_301">
-            <div class="v17_302"></div>
+            
             
          </div>
          <span class="v17_304">Vehicle Maintenance Record</span>

@@ -3,14 +3,14 @@
    <head>
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
       <link href="{{ asset('/css/vehicle.css') }}" rel="stylesheet" />
-      <title>Document</title>
+      <title>Choose vehicle</title>
    </head>
    <body>
       <div class="v17_256">
          <div class="v17_257"></div>
          <span class="v17_258">GoCar | Driver</span>
          <div class="v17_259">
-            <div class="v17_260"></div>
+            
             
          </div>
          <div class="v17_262">

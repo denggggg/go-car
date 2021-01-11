@@ -3,7 +3,7 @@
    <head>
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
       <link href="{{ asset('/css/vehicle.css') }}" rel="stylesheet" />
-      <title>ADD VEHICLE</title>
+      <title>Add Vehicle</title>
    </head>
    <body>
       <div class="v17_64">
@@ -12,7 +12,7 @@
          <span class="v17_66">GoCar | Driver</span>
          </a>
          <div class="v17_67">
-            <div class="v17_68"></div>
+            
             
          </div>
 
