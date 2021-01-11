@@ -36,7 +36,7 @@
     <h2 class="py-4">Driver Registration</h2>
 
     <div class="register ">
-    <form method="POST" action="">
+    <form method="POST" action="" enctype="multipart/form-data">
       @csrf
       <div class="driver-register">
 		<div class="detail"><span class="first">Full Name:</span> <span><input type="text" name="Fname" class="input-driver"></span></div>

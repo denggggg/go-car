@@ -34,28 +34,30 @@
 
   <section id="cust-driver-profile" class="container">
     <h2 class="py-4">My Profile</h2>
-    <form method="POST" action="">
+    <form method="POST" action="" enctype="multipart/form-data">
       @csrf
     <div class="profile ">
       <div class="profile-pic border" >
-        <img src="{{ asset('img/driver.png') }}" alt="driver-profile">
+        <!--img  src="{​​{​​url(‘storage/app/public/php9C2B.tmp’)}​​}​​" alt="driver-profile">storage/public/namefile.tmp-->
+        <img  src="{​​{​​url(‘storage/public/namefile.tmp’)}​​}​​" alt="driver-profile">
+        <!--img src="{{ asset('img/driver.png') }}" alt="driver-profile"-->
         <!--a href="http://127.0.0.1:8000/customer/drivers" class="w-100 py-2">
           <i class="fa fa-angle-double-left" aria-hidden="true"></i>
           Back
 		</a-->
-		<input type="file" id="upload" hidden/>
+		<input name="picture" type="file" id="upload" hidden />
 		<label for="upload">Upload...</label>
 
 
 	  </div>
       <div class="driver-profile">
-
+    <input type="hidden" name="id" value="{{$data['id']}}">
 		<div class="detail"><span class="first">Name:</span> <span>{{$data['driverName']}}</span></div>
-		<div class="detail mt-2"><span class="first">E-mail:</span><span><input type="text" class="input-driver" value="{{$data['driverEmail']}}"></span></div>
-		<div class="detail mt-2"><span class="first">Password:</span><span><input type="text" class="input-driver" value="{{$data['driverPwd']}}"></span></div>
-		<div class="detail mt-2"><span class="first">Phone Number:</span><span><input type="text" class="input-driver" value="{{$data['driverPhone']}}"></span></div>
-		<div class="detail mt-2"><span class="first">License expiry date:</span><span><input type="text" class="input-driver" value="{{$data['driverLicense']}}"></span></div>
-		<div class="detail mt-2"><span class="first">Address:</span><span><textarea class="input-driver">{{$data['driverAdress']}}</textarea></span></div>
+		<div class="detail mt-2"><span class="first">E-mail:</span><span><input type="text" name="email" class="input-driver" value="{{$data['driverEmail']}}"></span></div>
+		<div class="detail mt-2"><span class="first">Password:</span><span><input type="text" name="password" class="input-driver" value="{{$data['driverPwd']}}"></span></div>
+		<div class="detail mt-2"><span class="first">Phone Number:</span><span><input type="text" name="phone" class="input-driver" value="{{$data['driverPhone']}}"></span></div>
+		<div class="detail mt-2"><span class="first">License expiry date:</span><span><input type="text" name="license" class="input-driver" value="{{$data['driverLicense']}}"></span></div>
+		<div class="detail mt-2"><span class="first">Address:</span><span><textarea name="address" class="input-driver">{{$data['driverAdress']}}</textarea></span></div>
 		
 		<div class="driver-button"><a href="http://127.0.0.1:8000/driver/driverHomepage" class="driver-click mr-3">Cancel</a> <input type="submit" value="Update Profile" class="driver-click"></div>
     </div>

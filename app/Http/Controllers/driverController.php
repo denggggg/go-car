@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 use App\Models\driverModel;
-
+use Image;
+use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class driverController extends Controller
 {
@@ -21,26 +23,50 @@ class driverController extends Controller
          $driver->driverAdress = request('address');
          $driver->driverLicense = request('license');
          $driver->driverPic = request('picture');
-         $driver->save();
+      
+         //Storage::disk('local')->put(request('picture'), $driver->encode('png','jpeg'));
+         //Storage::putFile('picture', $request->file('picture'));
+         //$image = $request->file('image'); $filename = time() . '.' . $image->getClientOriginalExtension();
+         //Image::make($image)->resize(300, 300)->save( storage_path('/uploads/' . $filename ) );
+         //Storage::put(request('picture'), $driver, 'public');
+         $cover = $request->file('picture');
+         $extension = $cover->getClientOriginalExtension();
+         Storage::disk('public')->put($cover->getFilename().'.'.$extension,  File::get($cover));
+            $driver->save();
+        
+
+
          return redirect('/driver/driverHomepage');
     }
 
     public function viewDriver()
-    {
-        
+    {   
         return view('driver/driverHomepage');
     }
 
     public function viewDrivers($id)
     {
         $data = driverModel::find($id);
-        return view('driver/driverProfile')-> with ('data', $data);;
+        return view('driver/driverProfile')-> with ('data', $data);
     }
 
-    public function updateDriver()
+    public function updateDriver(Request $request)
     {
-        return view('driver/driverProfile');
+        
+        $data = driverModel::find($request -> id);
+        $data ->driverEmail = $request->email;
+        $data ->driverPwd = $request->password;
+        $data ->driverPhone = $request->phone;
+        $data ->driverAdress = $request->address;
+        $data ->driverLicense = $request->license;
+        $data->driverPic = $request->picture;
+        $data->save();
+       
+
+
+        return view('driver/driverProfile')-> with ('data', $data);
     }
+
 
     public function viewBookingLog()
     {
@@ -60,8 +86,8 @@ class driverController extends Controller
 
         session_start();
         $_SESSION['driver'] = $driver;
-
         return redirect('/driver/driverHomepage');
 
     }
+   
 }
