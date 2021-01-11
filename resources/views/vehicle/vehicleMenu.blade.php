@@ -12,7 +12,9 @@
          <span class="v17_33">GoCar | Driver </span>
          <div class="v17_34">
             <div class="v17_35"></div>
+            <a href="http://127.0.0.1:8000/">
             <span class="v17_36">Log Out</span>
+            </a>
          </div>
          <span class="v17_37">Manage Vehicle Menu</span>
          <div class="v17_95">
