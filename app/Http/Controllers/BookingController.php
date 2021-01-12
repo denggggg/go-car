@@ -116,9 +116,15 @@ class bookingController extends Controller
     public function getBookingStatus()
     {
         session_start();
-        $data = bookingModel::find($_SESSION['booking']->id);
-        
-        return view('booking/custViewBookStatus')->with('data', $data);
+        if(count($_SESSION))
+        {
+            $data = bookingModel::find($_SESSION['booking']->id);
+            return view('booking/custViewBookStatus')->with('data', $data);
+        }
+        else {
+            return redirect('/login');
+        }
+      
     }
 
     // GET method
