@@ -33,6 +33,35 @@ class vehicleController extends Controller
         return view('vehicle/vehicleMenu');
 
     }
+
+    public function viewVehicle($id){
+
+        $data = vehicleModel::find($id);
+
+        return view('vehicle/viewVehicle')->with('data', $data);
+    }
+
+
+    function editData($id){
+        $data = vehicleModel::find($id);
+        return view('vehicle/editForm')->with('data', $data);
+    }
+
+    function updateData(Request $req){//edit
+        //return $req->input();//incomplete
+        $data=vehicleModel::find($req->id);
+        $data->driverID = 0;
+        $data->vehicleModel = $req->modelEdit;
+        $data->vehicleRegNo = $req->regEdit;
+        $data->vehicleEngCC = $req->engEdit;
+        $data->vehicleManYear = $req->manufacturingYear;
+        $data->vehicleColour = $req->colorEdit;
+        $data->vehicleRoadTax = $req->rtaxEdit;
+        $data->save();
+        return view('vehicle/viewVehicle')->with('data', $data);
+    }
+
+
      public function saveMaintenance(Request $req){
         
         $data = new maintenanceModel;
@@ -76,31 +105,9 @@ class vehicleController extends Controller
         
     }
 
-    public function viewVehicle($id){
+    
 
-        $data = vehicleModel::find($id);
-
-        return view('vehicle/viewVehicle')->with('data', $data);
-    }
-
-    function editData($id){
-        $data = vehicleModel::find($id);
-        return view('vehicle/editForm')->with('data', $data);
-    }
-
-    function updateData(Request $req){
-        //return $req->input();//incomplete
-        $data=vehicleModel::find($req->id);
-        $data->driverID = 0;
-        $data->vehicleModel = $req->modelEdit;
-        $data->vehicleRegNo = $req->regEdit;
-        $data->vehicleEngCC = $req->engEdit;
-        $data->vehicleManYear = $req->manufacturingYear;
-        $data->vehicleColour = $req->colorEdit;
-        $data->vehicleRoadTax = $req->rtaxEdit;
-        $data->save();
-        return view('vehicle/viewVehicle')->with('data', $data);
-    }
+    
 
     public function editVehicle(){
         return view('vehicle/vehicleEdit');//vehicle/namapageblade
