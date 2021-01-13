@@ -12,7 +12,7 @@ class vehicleController extends Controller
         return view('vehicle/vehicleMenu');
     }
 
-    public function gotoaddvehicle(){
+    public function gotoAddVehicleForm(){
         return view('vehicle/vehicleAdd');
     }
 
@@ -33,23 +33,44 @@ class vehicleController extends Controller
         return view('vehicle/vehicleMenu');
 
     }
-     public function saveMaintenance(Request $req){
-        
-        $data = new maintenanceModel;
-        $data->vehicleLastServDate = $req->lastService;
-        $data->vehicleMileage = $req->mileage;
-        $data->vehicleNextServDate = $req->nextService;
-        $data->save();
-        return view('vehicle/vehicleMenu');
 
-     }
+    public function viewVehicle($id){
+
+        $data = vehicleModel::find($id);
+
+        return view('vehicle/viewVehicle')->with('data', $data);
+    }
 
 
-    /*public function viewVehicle(){
-        $data = vehicleModel::where('vehicleID', 1)->get();
+    public function editVehicle(){
+        return view('vehicle/vehicleEdit');//vehicle/namapageblade
+    }
 
+
+    function editDataVehicleForm($id){
+        $data = vehicleModel::find($id);
         return view('vehicle/editForm')->with('data', $data);
-    }*/
+    }
+
+
+    function updateDataVehicle(Request $req){//edit
+        //return $req->input();//incomplete
+        $data=vehicleModel::find($req->id);
+        $data->driverID = 0;
+        $data->vehicleModel = $req->modelEdit;
+        $data->vehicleRegNo = $req->regEdit;
+        $data->vehicleEngCC = $req->engEdit;
+        $data->vehicleManYear = $req->manufacturingYear;
+        $data->vehicleColour = $req->colorEdit;
+        $data->vehicleRoadTax = $req->rtaxEdit;
+        $data->save();
+        return view('vehicle/viewVehicle')->with('data', $data);
+    }
+
+    public function maintenanceVehicleSelect(){
+        return view('vehicle/vehicleMaintenance');
+    }
+
 
     public function viewMaintenance($id){
 
@@ -57,6 +78,8 @@ class vehicleController extends Controller
 
         return view('vehicle/viewMaintenance')->with('data', $data);
     }
+
+
 
     public function editFormMaintenance($id){
 
@@ -76,43 +99,23 @@ class vehicleController extends Controller
         
     }
 
-    public function viewVehicle($id){
 
-        $data = vehicleModel::find($id);
+    /*public function viewVehicle(){
+        $data = vehicleModel::where('vehicleID', 1)->get();
 
-        return view('vehicle/viewVehicle')->with('data', $data);
-    }
-
-    function editData($id){
-        $data = vehicleModel::find($id);
         return view('vehicle/editForm')->with('data', $data);
-    }
+    }*/
 
-    function updateData(Request $req){
-        //return $req->input();//incomplete
-        $data=vehicleModel::find($req->id);
-        $data->driverID = 0;
-        $data->vehicleModel = $req->modelEdit;
-        $data->vehicleRegNo = $req->regEdit;
-        $data->vehicleEngCC = $req->engEdit;
-        $data->vehicleManYear = $req->manufacturingYear;
-        $data->vehicleColour = $req->colorEdit;
-        $data->vehicleRoadTax = $req->rtaxEdit;
-        $data->save();
-        return view('vehicle/viewVehicle')->with('data', $data);
-    }
+   
 
-    public function editVehicle(){
-        return view('vehicle/vehicleEdit');//vehicle/namapageblade
-    }
+  
 
-    public function maintenanceVehicle(){
-        return view('vehicle/vehicleMaintenance');
-    }
+  
 
-    public function editFormFunc(){
-        return view('vehicle/editForm');
-    }
 
+
+   
+
+    
     
 }

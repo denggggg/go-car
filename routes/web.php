@@ -73,15 +73,15 @@ Route::post('/driver/booking/{id}', [BookingController::class, 'driverUpdateAssi
 
 Route::get('vehicleMenu', [vehicleController::class, 'menuVehicle']);//@functionName
 
-Route::get('vehicleAdd', [vehicleController::class, 'gotoaddvehicle']);
+Route::get('vehicleAdd', [vehicleController::class, 'gotoAddVehicleForm']);
 
 Route::get('vehicleEdit', [vehicleController::class, 'editVehicle']);
 
-Route::get('vehicleMaintenance', [vehicleController::class, 'maintenanceVehicle']);
+Route::get('vehicleMaintenance', [vehicleController::class, 'maintenanceVehicleSelect']);
 
 Route::get('viewVehicle/{id}', [vehicleController::class, 'viewVehicle']);//...
 
-Route::get('editForm/{id}', [vehicleController::class, 'editData']);
+Route::get('editForm/{id}', [vehicleController::class, 'editDataVehicleForm']);
 
 Route::get('viewMaintenance/{id}', [vehicleController::class, 'viewMaintenance']);
 
@@ -89,9 +89,7 @@ Route::get('editFormMaintenance/{id}', [vehicleController::class, 'editFormMaint
 
 Route::post('submit', [vehicleController::class, 'addVehicle']);//post from form to controller
 
-Route::post('saveMaintenance', [vehicleController::class, 'saveMaintenance']);//save maintenance record
-
-Route::post('edit', 'App\Http\Controllers\vehicleController@updateData');//save edited vehicle info
+Route::post('edit', 'App\Http\Controllers\vehicleController@updateDataVehicle');//save edited vehicle info
 
 Route::post('saveEditMaintenance', 'App\Http\Controllers\vehicleController@saveEditMaintenance');//save edited maintenance
 
